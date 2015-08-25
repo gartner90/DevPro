@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeyn | Font Awsome Icons</title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="src/css/fontello.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/css/highlight.css">
+    <link rel="stylesheet" href="src/styles/corporate/custom.css">
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script src="src/js/highlight.js"></script>
+    <script src="src/js/components/lightbox.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false" type="text/javascript"></script>
+
+    <!-- Google Map script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            try {
+                var map, center = new google.maps.LatLng(-7.2852292, 112.6809869),
+                    style = [{
+                        "featureType": "water",
+                        "stylers": [{
+                            "color": "#021019"
+                        }]
+                    }, {
+                        "featureType": "landscape",
+                        "stylers": [{
+                            "color": "#08304b"
+                        }]
+                    }, {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#0c4152"
+                        }, {
+                            "lightness": 5
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b434f"
+                        }, {
+                            "lightness": 25
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b3d51"
+                        }, {
+                            "lightness": 16
+                        }]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    }, {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#000000"
+                        }, {
+                            "lightness": 13
+                        }]
+                    }, {
+                        "featureType": "transit",
+                        "stylers": [{
+                            "color": "#146474"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#144b53"
+                        }, {
+                            "lightness": 14
+                        }, {
+                            "weight": 1.4
+                        }]
+                    }],
+                    mapOptions = {
+                        center: center,
+                        mapTypeControl: false,
+                        zoom: 14,
+                        scrollwheel: false,
+                        styles: style
+                    };
+                var iconMarker = {
+                    url: 'images/map_marker.png'
+                };
+                map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: center,
+                    map: map,
+                    icon: iconMarker
+                });
+            } catch ($err) {}
+        });
+    </script>
+
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+<div id="header-block"   class="pages pagebg4 wide-header" >
+<!-- Container -->
+        <div class="uk-container uk-container-center">
+            <a class="tm-logo" href="index.html"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn"> </a>
+            <!--/Logo-->
+            <nav class="tm-navbar uk-navbar">
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-parent uk-active" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="index.html">Corporate</a> </li>
+                                        <li> <a href="index_classic.html">Classic</a> </li>
+                                        <li> <a href="index_creative.html">Creative</a> </li>
+                                        <li> <a href="index_blogger.html">Blogger</a> </li>
+                                        <li> <a href="index_medical.html">Medical</a> </li>
+                                        <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                        <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                        <li> <a href="index_hosting.html">Hosting</a> </li>
+                                        <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                        <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                        <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Landing Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="landing_event.html">Event</a> </li>
+                                        <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                        <li><a href="landing_launch.html">Launch</a> </li>
+                                        <li><a href="landing_onepage.html">One Page</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-5" style="min-width: 1125px; max-width: 1125px; width:225px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Blog
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                                <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                                <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Our Team
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="our_team_one.html">Our Team One</a> </li>
+                                                <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                                <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Contact Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                                <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                                <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">About Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="about_us_one.html">About Us One</a> </li>
+                                                <li><a href="about_us_two.html">About Us Two</a> </li>
+                                                <li><a href="about_us_three.html">About Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Services
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="services_page_one.html">Services Page One</a> </li>
+                                                <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                                <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Widgets</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3 uk-dropdown-center uk-dropdown-center" style="min-width: 700px; max-width: 700px; width:470px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                        <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                        <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                        <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                        <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                        <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                        <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                        <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                        <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                        <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                        <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                        <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                        <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+</ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+
+                                        <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                        <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                        <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                        <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                        <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                        <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                        <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                        <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                        <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                        <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                        <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                        <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                        <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                        <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                        <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                        <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                        <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                        <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                        <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                        <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                        <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                        <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                        <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                        <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                        <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Full Features</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                        <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                        <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                        <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                        <li class="uk-active"> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                        </li>
+                                        <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <!--/ Menu Items With Dropdown-->
+                    <ul class="uk-navbar-nav uk-hidden-small">
+                        <li class="uk-parent" data-uk-dropdown> <a href="#">Contact</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <div class="uk-grid menu_module">
+                                    <div class="uk-width-1-2">
+                                        <h4 class="bold" style="color:white;">Say Hello To Us</h4>
+                                        <p class="p" style="color:white;">Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                                        <div id="sp_quickcontact246" class="sp_quickcontact">
+                                            <div id="sp_qc_status"></div>
+                                            <form id="sp-quickcontact-form">
+                                                <div class="sp_qc_clr"></div>
+                                                <div class="uk-grid contact_forms">
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <span class="your-name">
+                                                <input type="text" name="name" class="name-input"
+                                                id="name"
+                                                onfocus="if (this.value=='Name') this.value='';"
+                                                onblur="if (this.value=='') this.value='Name';"
+                                                value="Name"
+                                                required
+                                                />
+                                                </span>
+                                                        <span class="your-email">
+                                                    <input type="text" name="email" id="email"
+                                                    class="email-input"
+                                                    onblur="if (this.value=='') this.value='Email';"
+                                                    value="Email"
+                                                    onfocus="if (this.value=='Email') this.value='';"
+                                                    required
+                                                    /></span>
+                                                        <span class="your-subject">
+                                                        <input type="text" name="subject" class="subject-input"
+                                                        id="subject"
+                                                        onfocus="if (this.value=='Phone') this.value='';"
+                                                        onblur="if (this.value=='') this.value='Phone';"
+                                                        value="Phone"
+                                                        /></span>
+                                                    </div>
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <textarea name="message" id="message" class="message-input" onfocus="if (this.value=='Message') this.value='';" onblur="if (this.value=='') this.value='Message';">Message</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="sp_qc_clr"></div>
+                                                <input id="sp_qc_submit" class="button uk-button uk-button-primary uk-float-right" style="padding: 0 18px;  text-transform: uppercase;" type="submit" value="Send" />
+                                                <div class="sp_qc_clr"></div>
+                                            </form>
+                                        </div>
+                                        <!--/Contact Form-->
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <div id="map1" class="google-map" style="height:322px;width:100%"></div>
+                                        <!--/Google Map-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <!--/Off Canvas Mobile Menu-->
+                    <div class="uk-navbar-flip">
+                        <div class="uk-navbar-content uk-hidden-small">
+                            <a href="#searchbar" class="search-toggle"><i class="uk-icon icon-search-6"></i></a>
+                            <div class="search-bar search-hidden">
+                                <form class="searchbar search-40 uk-search" method="post" role="search">
+                                    <input class="uk-search-field form-control" type="search" name="searchword" placeholder="search...">
+                                    <input type="hidden" name="Itemid" value="254"> <a class="search-close"><i class="uk-icon-close"></i></a>
+                                </form>
+                                <!--/Search Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+                        <a class="tm-logo-small" href="index.html"> <img src="images/zeyn_logo.png" width="135" height="40" alt="Zeyn" class="uk-responsive-height"> </a>
+                        <!--/ Mobile Mini Logo -->
+                    </div>
+            </nav>
+            <h1 class="page-title" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">Font Awsome Icons</h1>
+            <!--/Page Title With Background-->
+            <!--/Menu-->
+        </div>
+
+  </div>
+            <!--/Header-->
+
+  <div id="main-block"  >
+
+        <div class="tm-top-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><div class="uk-width-1-1">
+  <div class="uk-panel uk-panel-box uk-container uk-container-center parallax modulebox"   >
+ 
+
+  <div class="p space-bottom">   
+<h3 class="thin-border thin-left bold">Font Awsome Icons</h3>
+
+
+                            <p class="uk-article-lead">Place vector icons anywhere using an icon font.</p>
+
+                            <p>This component is using the fantastic <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> icon font, a project by Dave Gandy. Altogether Font Awesome provides more than 300 symbols and glyphs for web-related actions. Icon fonts are great, because they enable you to easily change color, size and more via CSS. They are scalable vector graphics, which means that they look great on high-resolution displays.</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">Usage</a></h2>
+
+                            <p>To apply this component, add any <code>.uk-icon-*</code> class to an <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code> element. Et voilà, you have a vector icon, which inherits size and color just like your text does.</p>
+
+                            <h3 class="tm-article-subtitle">Examples</h3>
+
+                            <ul class="uk-width-medium-1-3 uk-list uk-list-line">
+                                <li><i class="uk-icon-cog"></i> Uses the <code>.uk-icon-cog</code> class</li>
+                                <li><i class="uk-icon-user"></i> Uses the <code>.uk-icon-user</code> class</li>
+                                <li><i class="uk-icon-home"></i> Uses the <code>.uk-icon-home</code> class</li>
+                                <li><a href="#"><i class="uk-icon-external-link"></i> An icon in a link</a></li>
+                            </ul>
+
+                            <a href="#" class="uk-button uk-button-primary"><i class="uk-icon-envelope-o"></i> A button with an icon</a>
+
+                            <h3 class="tm-article-subtitle">Markup</h3>
+
+<pre><code>&lt;!-- This is an icon --&gt;
+&lt;i class="uk-icon-cog"&gt;&lt;/i&gt;
+
+&lt;!-- This is an icon in a link --&gt;
+&lt;a href=""&gt;&lt;i class="uk-icon-cog"&gt;&lt;/i&gt; ...&lt;/a&gt;</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="more-examples"><a href="#more-examples" class="uk-link-reset">More examples</a></h2>
+
+                            <h3>Button group</h3>
+
+                            <p>This example shows a group of buttons from the Button component with icons inside each button.</p>
+
+                            <h4 class="tm-article-subtitle">Example</h4>
+
+                            <div class="uk-button-group">
+                                <a href="#" class="uk-button"><i class="uk-icon-fast-backward"></i></a>
+                                <a href="#" class="uk-button"><i class="uk-icon-stop"></i></a>
+                                <a href="#" class="uk-button"><i class="uk-icon-play"></i></a>
+                                <a href="#" class="uk-button"><i class="uk-icon-fast-forward"></i></a>
+                            </div>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Button dropdown</h3>
+
+                            <p>This example shows a button which is split into a standard action to the left and a dropdown toggle on the right, using the Dropdown component.</p>
+
+                            <h4 class="tm-article-subtitle">Example</h4>
+
+                            <div class="uk-button-group">
+                                <button class="uk-button uk-button-primary"><i class="uk-icon-folder-open"></i> Post</button>
+                                <div data-uk-dropdown="{mode:'click'}">
+                                    <button class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#"><i class="uk-icon-edit"></i> Edit</a></li>
+                                            <li><a href="#"><i class="uk-icon-eye"></i> View</a></li>
+                                            <li><a href="#"><i class="uk-icon-check-square-o"></i> Enable</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#"><i class="uk-icon-trash-o"></i> Trash</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Blockquotes</h3>
+
+                            <p>This example shows a blockquote from the Base component with a large quote icon. It also uses the <code>.uk-align-left</code> class from the Utility component .</p>
+
+                            <h4 class="tm-article-subtitle">Example</h4>
+
+                            <blockquote>
+                                <p><i class="uk-icon-quote-left uk-icon-large uk-align-left"></i>The &lt;blockquote&gt; element defines a long quotation which also creates a new block by inserting white space before and after the blockquote element.</p>
+                            </blockquote>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="size-modifiers"><a href="#size-modifiers" class="uk-link-reset">Size modifiers</a></h2>
+
+                            <p>Add the <code>.uk-icon-small</code>, <code>.uk-icon-medium</code> or <code>.uk-icon-large</code> class to an icon to make the it larger.</p>
+
+                            <ul class="uk-list uk-list-space">
+                                <li><i class="uk-icon-home"></i> This is the default size.</li>
+                                <li><i class="uk-icon-home uk-icon-small"></i> This icon uses the <code>.uk-icon-small</code> class.</li>
+                                <li><i class="uk-icon-home uk-icon-medium"></i> This icon uses the <code>.uk-icon-medium</code> class.</li>
+                                <li><i class="uk-icon-home uk-icon-large"></i> This icon uses the <code>.uk-icon-large</code> class.</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="spin-modifier"><a href="#spin-modifier" class="uk-link-reset">Spin modifier</a></h2>
+
+                            <p>Add the <code>.uk-icon-spin</code> class to create animated spinning icons.</p>
+
+                            <ul class="uk-list uk-list-space">
+                                <li><i class="uk-icon-spinner uk-icon-spin"></i> Spinner icon for loading content ... </li>
+                                <li><i class="uk-icon-refresh uk-icon-spin"></i> Refresh icon for refreshing content ... </li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="icon-hover"><a href="#icon-hover" class="uk-link-reset">Icon hover</a></h2>
+
+                            <p>Use the modifier <code>.uk-icon-hover</code> class to use an anchor as an icon, applying a hover effect and removing the link underline.</p>
+
+                            <h3 class="tm-article-subtitle">Example</h3>
+
+                            <a href="#" class="uk-icon-small uk-icon-hover uk-icon-github"></a>
+                            <a href="#" class="uk-icon-small uk-icon-hover uk-icon-twitter"></a>
+                            <a href="#" class="uk-icon-small uk-icon-hover uk-icon-dribbble"></a>
+                            <a href="#" class="uk-icon-small uk-icon-hover uk-icon-html5"></a>
+
+                            <h3 class="tm-article-subtitle">Markup</h3>
+
+<pre><code>&lt;a href="" class="uk-icon-hover uk-icon-github"&gt;&lt;/a&gt;</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="icon-button"><a href="#icon-button" class="uk-link-reset">Icon button</a></h2>
+
+                            <p>Use the modifier <code>.uk-icon-button</code> class to create an icon button, which can be used perfectly for social icons.</p>
+
+                            <h3 class="tm-article-subtitle">Example</h3>
+
+                            <a href="#" class="uk-icon-button uk-icon-github"></a>
+                            <a href="#" class="uk-icon-button uk-icon-twitter"></a>
+                            <a href="#" class="uk-icon-button uk-icon-dribbble"></a>
+                            <a href="#" class="uk-icon-button uk-icon-html5"></a>
+
+                            <h3 class="tm-article-subtitle">Markup</h3>
+
+<pre><code>&lt;a href="" class="uk-icon-button uk-icon-github"&gt;&lt;/a&gt;</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="justify-icon"><a href="#justify-icon" class="uk-link-reset">Justify icon</a></h2>
+
+                            <p>To add a fixed width to the icon and center it, add the <code>.uk-icon-justify</code> class. This is useful when using different icons in a list.</p>
+
+                            <h3 class="tm-article-subtitle">Example</h3>
+
+                            <ul class="uk-list uk-list-space">
+                                <li><i class="uk-icon-justify uk-icon-github"></i> Justified icon</li>
+                                <li><i class="uk-icon-justify uk-icon-flash"></i> Justified icon</li>
+                                <li><i class="uk-icon-justify uk-icon-folder-o"></i> Justified icon</li>
+                                <li><i class="uk-icon-justify uk-icon-user"></i> Justified icon</li>
+                            </ul>
+
+                            <h3 class="tm-article-subtitle">Markup</h3>
+
+<pre><code>&lt;a href="" class="uk-icon-justify uk-icon-github"&gt;&lt;/a&gt;</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="icon-mapping"><a href="#icon-mapping" class="uk-link-reset">Icon mapping</a></h2>
+
+                            <p>Here is an overview of all available <code>.uk-icon-*</code> classes provided by <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>.</p>
+
+                            <h3>Web Application Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+
+                                <li><i class="uk-icon-adjust"></i> adjust</li>
+                                <li><i class="uk-icon-anchor"></i> anchor</li>
+                                <li><i class="uk-icon-archive"></i> archive</li>
+                                <li><i class="uk-icon-area-chart"></i> area-chart</li>
+                                <li><i class="uk-icon-arrows"></i> arrows</li>
+                                <li><i class="uk-icon-arrows-h"></i> arrows-h</li>
+                                <li><i class="uk-icon-arrows-v"></i> arrows-v</li>
+                                <li><i class="uk-icon-asterisk"></i> asterisk</li>
+                                <li><i class="uk-icon-at"></i> at</li>
+                                <li><i class="uk-icon-automobile"></i> automobile <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-ban"></i> ban</li>
+                                <li><i class="uk-icon-bank"></i> bank <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-bar-chart"></i> bar-chart</li>
+                                <li><i class="uk-icon-bar-chart-o"></i> bar-chart-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-barcode"></i> barcode</li>
+                                <li><i class="uk-icon-bars"></i> bars</li>
+                                <li><i class="uk-icon-bed"></i> bed</li>
+                                <li><i class="uk-icon-beer"></i> beer</li>
+                                <li><i class="uk-icon-bell"></i> bell</li>
+                                <li><i class="uk-icon-bell-o"></i> bell-o</li>
+                                <li><i class="uk-icon-bell-slash"></i> bell-slash</li>
+                                <li><i class="uk-icon-bell-slash-o"></i> bell-slash-o</li>
+                                <li><i class="uk-icon-bicycle"></i> bicycle</li>
+                                <li><i class="uk-icon-binoculars"></i> binoculars</li>
+                                <li><i class="uk-icon-birthday-cake"></i> birthday-cake</li>
+                                <li><i class="uk-icon-bolt"></i> bolt</li>
+                                <li><i class="uk-icon-bomb"></i> bomb</li>
+                                <li><i class="uk-icon-book"></i> book</li>
+                                <li><i class="uk-icon-bookmark"></i> bookmark</li>
+                                <li><i class="uk-icon-bookmark-o"></i> bookmark-o</li>
+                                <li><i class="uk-icon-briefcase"></i> briefcase</li>
+                                <li><i class="uk-icon-bug"></i> bug</li>
+                                <li><i class="uk-icon-building"></i> building</li>
+                                <li><i class="uk-icon-building-o"></i> building-o</li>
+                                <li><i class="uk-icon-bullhorn"></i> bullhorn</li>
+                                <li><i class="uk-icon-bullseye"></i> bullseye</li>
+                                <li><i class="uk-icon-bus"></i> bus</li>
+                                <li><i class="uk-icon-cab"></i> cab <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-calculator"></i> calculator</li>
+                                <li><i class="uk-icon-calendar"></i> calendar</li>
+                                <li><i class="uk-icon-calendar-o"></i> calendar-o</li>
+                                <li><i class="uk-icon-camera"></i> camera</li>
+                                <li><i class="uk-icon-camera-retro"></i> camera-retro</li>
+                                <li><i class="uk-icon-car"></i> car</li>
+                                <li><i class="uk-icon-caret-square-o-down"></i> caret-square-o-down</li>
+                                <li><i class="uk-icon-caret-square-o-left"></i> caret-square-o-left</li>
+                                <li><i class="uk-icon-caret-square-o-right"></i> caret-square-o-right</li>
+                                <li><i class="uk-icon-caret-square-o-up"></i> caret-square-o-up</li>
+                                <li><i class="uk-icon-cart-arrow-down"></i> cart-arrow-down</li>
+                                <li><i class="uk-icon-cart-plus"></i> cart-plus</li>
+                                <li><i class="uk-icon-cc"></i> cc</li>
+                                <li><i class="uk-icon-certificate"></i> certificate</li>
+                                <li><i class="uk-icon-check"></i> check</li>
+                                <li><i class="uk-icon-check-circle"></i> check-circle</li>
+                                <li><i class="uk-icon-check-circle-o"></i> check-circle-o</li>
+                                <li><i class="uk-icon-check-square"></i> check-square</li>
+                                <li><i class="uk-icon-check-square-o"></i> check-square-o</li>
+                                <li><i class="uk-icon-child"></i> child</li>
+                                <li><i class="uk-icon-circle"></i> circle</li>
+                                <li><i class="uk-icon-circle-o"></i> circle-o</li>
+                                <li><i class="uk-icon-circle-o-notch"></i> circle-o-notch</li>
+                                <li><i class="uk-icon-circle-thin"></i> circle-thin</li>
+                                <li><i class="uk-icon-clock-o"></i> clock-o</li>
+                                <li><i class="uk-icon-close"></i> close <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-cloud"></i> cloud</li>
+                                <li><i class="uk-icon-cloud-download"></i> cloud-download</li>
+                                <li><i class="uk-icon-cloud-upload"></i> cloud-upload</li>
+                                <li><i class="uk-icon-code"></i> code</li>
+                                <li><i class="uk-icon-code-fork"></i> code-fork</li>
+                                <li><i class="uk-icon-coffee"></i> coffee</li>
+                                <li><i class="uk-icon-cog"></i> cog</li>
+                                <li><i class="uk-icon-cogs"></i> cogs</li>
+                                <li><i class="uk-icon-comment"></i> comment</li>
+                                <li><i class="uk-icon-comment-o"></i> comment-o</li>
+                                <li><i class="uk-icon-comments"></i> comments</li>
+                                <li><i class="uk-icon-comments-o"></i> comments-o</li>
+                                <li><i class="uk-icon-compass"></i> compass</li>
+                                <li><i class="uk-icon-copyright"></i> copyright</li>
+                                <li><i class="uk-icon-credit-card"></i> credit-card</li>
+                                <li><i class="uk-icon-crop"></i> crop</li>
+                                <li><i class="uk-icon-crosshairs"></i> crosshairs</li>
+                                <li><i class="uk-icon-cube"></i> cube</li>
+                                <li><i class="uk-icon-cubes"></i> cubes</li>
+                                <li><i class="uk-icon-cutlery"></i> cutlery</li>
+                                <li><i class="uk-icon-dashboard"></i> dashboard <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-database"></i> database</li>
+                                <li><i class="uk-icon-desktop"></i> desktop</li>
+                                <li><i class="uk-icon-diamond"></i> diamond</li>
+                                <li><i class="uk-icon-dot-circle-o"></i> dot-circle-o</li>
+                                <li><i class="uk-icon-download"></i> download</li>
+                                <li><i class="uk-icon-edit"></i> edit <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-ellipsis-h"></i> ellipsis-h</li>
+                                <li><i class="uk-icon-ellipsis-v"></i> ellipsis-v</li>
+                                <li><i class="uk-icon-envelope"></i> envelope</li>
+                                <li><i class="uk-icon-envelope-o"></i> envelope-o</li>
+                                <li><i class="uk-icon-envelope-square"></i> envelope-square</li>
+                                <li><i class="uk-icon-eraser"></i> eraser</li>
+                                <li><i class="uk-icon-exchange"></i> exchange</li>
+                                <li><i class="uk-icon-exclamation"></i> exclamation</li>
+                                <li><i class="uk-icon-exclamation-circle"></i> exclamation-circle</li>
+                                <li><i class="uk-icon-exclamation-triangle"></i> exclamation-triangle</li>
+                                <li><i class="uk-icon-external-link"></i> external-link</li>
+                                <li><i class="uk-icon-external-link-square"></i> external-link-square</li>
+                                <li><i class="uk-icon-eye"></i> eye</li>
+                                <li><i class="uk-icon-eye-slash"></i> eye-slash</li>
+                                <li><i class="uk-icon-eyedropper"></i> eyedropper</li>
+                                <li><i class="uk-icon-fax"></i> fax</li>
+                                <li><i class="uk-icon-female"></i> female</li>
+                                <li><i class="uk-icon-fighter-jet"></i> fighter-jet</li>
+                                <li><i class="uk-icon-file-archive-o"></i> file-archive-o</li>
+                                <li><i class="uk-icon-file-audio-o"></i> file-audio-o</li>
+                                <li><i class="uk-icon-file-code-o"></i> file-code-o</li>
+                                <li><i class="uk-icon-file-excel-o"></i> file-excel-o</li>
+                                <li><i class="uk-icon-file-image-o"></i> file-image-o</li>
+                                <li><i class="uk-icon-file-movie-o"></i> file-movie-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-pdf-o"></i> file-pdf-o</li>
+                                <li><i class="uk-icon-file-photo-o"></i> file-photo-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-picture-o"></i> file-picture-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-powerpoint-o"></i> file-powerpoint-o</li>
+                                <li><i class="uk-icon-file-sound-o"></i> file-sound-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-video-o"></i> file-video-o</li>
+                                <li><i class="uk-icon-file-word-o"></i> file-word-o</li>
+                                <li><i class="uk-icon-file-zip-o"></i> file-zip-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-film"></i> film</li>
+                                <li><i class="uk-icon-filter"></i> filter</li>
+                                <li><i class="uk-icon-fire"></i> fire</li>
+                                <li><i class="uk-icon-fire-extinguisher"></i> fire-extinguisher</li>
+                                <li><i class="uk-icon-flag"></i> flag</li>
+                                <li><i class="uk-icon-flag-checkered"></i> flag-checkered</li>
+                                <li><i class="uk-icon-flag-o"></i> flag-o</li>
+                                <li><i class="uk-icon-flash"></i> flash <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-flask"></i> flask</li>
+                                <li><i class="uk-icon-folder"></i> folder</li>
+                                <li><i class="uk-icon-folder-o"></i> folder-o</li>
+                                <li><i class="uk-icon-folder-open"></i> folder-open</li>
+                                <li><i class="uk-icon-folder-open-o"></i> folder-open-o</li>
+                                <li><i class="uk-icon-frown-o"></i> frown-o</li>
+                                <li><i class="uk-icon-futbol-o"></i> futbol-o</li>
+                                <li><i class="uk-icon-gamepad"></i> gamepad</li>
+                                <li><i class="uk-icon-gavel"></i> gavel</li>
+                                <li><i class="uk-icon-gear"></i> gear <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-gears"></i> gears <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-genderless"></i> genderless <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-gift"></i> gift</li>
+                                <li><i class="uk-icon-glass"></i> glass</li>
+                                <li><i class="uk-icon-globe"></i> globe</li>
+                                <li><i class="uk-icon-graduation-cap"></i> graduation-cap</li>
+                                <li><i class="uk-icon-group"></i> group <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-hdd-o"></i> hdd-o</li>
+                                <li><i class="uk-icon-headphones"></i> headphones</li>
+                                <li><i class="uk-icon-heart"></i> heart</li>
+                                <li><i class="uk-icon-heart-o"></i> heart-o</li>
+                                <li><i class="uk-icon-heartbeat"></i> heartbeat</li>
+                                <li><i class="uk-icon-history"></i> history</li>
+                                <li><i class="uk-icon-home"></i> home</li>
+                                <li><i class="uk-icon-hotel"></i> hotel <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-image"></i> image <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-inbox"></i> inbox</li>
+                                <li><i class="uk-icon-info"></i> info</li>
+                                <li><i class="uk-icon-info-circle"></i> info-circle</li>
+                                <li><i class="uk-icon-institution"></i> institution <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-key"></i> key</li>
+                                <li><i class="uk-icon-keyboard-o"></i> keyboard-o</li>
+                                <li><i class="uk-icon-language"></i> language</li>
+                                <li><i class="uk-icon-laptop"></i> laptop</li>
+                                <li><i class="uk-icon-leaf"></i> leaf</li>
+                                <li><i class="uk-icon-legal"></i> legal <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-lemon-o"></i> lemon-o</li>
+                                <li><i class="uk-icon-level-down"></i> level-down</li>
+                                <li><i class="uk-icon-level-up"></i> level-up</li>
+                                <li><i class="uk-icon-life-bouy"></i> life-bouy <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-life-buoy"></i> life-buoy <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-life-ring"></i> life-ring</li>
+                                <li><i class="uk-icon-life-saver"></i> life-saver <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-lightbulb-o"></i> lightbulb-o</li>
+                                <li><i class="uk-icon-line-chart"></i> line-chart</li>
+                                <li><i class="uk-icon-location-arrow"></i> location-arrow</li>
+                                <li><i class="uk-icon-lock"></i> lock</li>
+                                <li><i class="uk-icon-magic"></i> magic</li>
+                                <li><i class="uk-icon-magnet"></i> magnet</li>
+                                <li><i class="uk-icon-mail-forward"></i> mail-forward <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-mail-reply"></i> mail-reply <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-mail-reply-all"></i> mail-reply-all <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-male"></i> male</li>
+                                <li><i class="uk-icon-map-marker"></i> map-marker</li>
+                                <li><i class="uk-icon-meh-o"></i> meh-o</li>
+                                <li><i class="uk-icon-microphone"></i> microphone</li>
+                                <li><i class="uk-icon-microphone-slash"></i> microphone-slash</li>
+                                <li><i class="uk-icon-minus"></i> minus</li>
+                                <li><i class="uk-icon-minus-circle"></i> minus-circle</li>
+                                <li><i class="uk-icon-minus-square"></i> minus-square</li>
+                                <li><i class="uk-icon-minus-square-o"></i> minus-square-o</li>
+                                <li><i class="uk-icon-mobile"></i> mobile</li>
+                                <li><i class="uk-icon-mobile-phone"></i> mobile-phone <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-money"></i> money</li>
+                                <li><i class="uk-icon-moon-o"></i> moon-o</li>
+                                <li><i class="uk-icon-mortar-board"></i> mortar-board <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-motorcycle"></i> motorcycle</li>
+                                <li><i class="uk-icon-music"></i> music</li>
+                                <li><i class="uk-icon-navicon"></i> navicon <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-newspaper-o"></i> newspaper-o</li>
+                                <li><i class="uk-icon-paint-brush"></i> paint-brush</li>
+                                <li><i class="uk-icon-paper-plane"></i> paper-plane</li>
+                                <li><i class="uk-icon-paper-plane-o"></i> paper-plane-o</li>
+                                <li><i class="uk-icon-paw"></i> paw</li>
+                                <li><i class="uk-icon-pencil"></i> pencil</li>
+                                <li><i class="uk-icon-pencil-square"></i> pencil-square</li>
+                                <li><i class="uk-icon-pencil-square-o"></i> pencil-square-o</li>
+                                <li><i class="uk-icon-phone"></i> phone</li>
+                                <li><i class="uk-icon-phone-square"></i> phone-square</li>
+                                <li><i class="uk-icon-photo"></i> photo <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-picture-o"></i> picture-o</li>
+                                <li><i class="uk-icon-pie-chart"></i> pie-chart</li>
+                                <li><i class="uk-icon-plane"></i> plane</li>
+                                <li><i class="uk-icon-plug"></i> plug</li>
+                                <li><i class="uk-icon-plus"></i> plus</li>
+                                <li><i class="uk-icon-plus-circle"></i> plus-circle</li>
+                                <li><i class="uk-icon-plus-square"></i> plus-square</li>
+                                <li><i class="uk-icon-plus-square-o"></i> plus-square-o</li>
+                                <li><i class="uk-icon-power-off"></i> power-off</li>
+                                <li><i class="uk-icon-print"></i> print</li>
+                                <li><i class="uk-icon-puzzle-piece"></i> puzzle-piece</li>
+                                <li><i class="uk-icon-qrcode"></i> qrcode</li>
+                                <li><i class="uk-icon-question"></i> question</li>
+                                <li><i class="uk-icon-question-circle"></i> question-circle</li>
+                                <li><i class="uk-icon-quote-left"></i> quote-left</li>
+                                <li><i class="uk-icon-quote-right"></i> quote-right</li>
+                                <li><i class="uk-icon-random"></i> random</li>
+                                <li><i class="uk-icon-recycle"></i> recycle</li>
+                                <li><i class="uk-icon-refresh"></i> refresh</li>
+                                <li><i class="uk-icon-remove"></i> remove <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-reorder"></i> reorder <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-reply"></i> reply</li>
+                                <li><i class="uk-icon-reply-all"></i> reply-all</li>
+                                <li><i class="uk-icon-retweet"></i> retweet</li>
+                                <li><i class="uk-icon-road"></i> road</li>
+                                <li><i class="uk-icon-rocket"></i> rocket</li>
+                                <li><i class="uk-icon-rss"></i> rss</li>
+                                <li><i class="uk-icon-rss-square"></i> rss-square</li>
+                                <li><i class="uk-icon-search"></i> search</li>
+                                <li><i class="uk-icon-search-minus"></i> search-minus</li>
+                                <li><i class="uk-icon-search-plus"></i> search-plus</li>
+                                <li><i class="uk-icon-send"></i> send <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-send-o"></i> send-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-server"></i> server</li>
+                                <li><i class="uk-icon-share"></i> share</li>
+                                <li><i class="uk-icon-share-alt"></i> share-alt</li>
+                                <li><i class="uk-icon-share-alt-square"></i> share-alt-square</li>
+                                <li><i class="uk-icon-share-square"></i> share-square</li>
+                                <li><i class="uk-icon-share-square-o"></i> share-square-o</li>
+                                <li><i class="uk-icon-shield"></i> shield</li>
+                                <li><i class="uk-icon-ship"></i> ship</li>
+                                <li><i class="uk-icon-shopping-cart"></i> shopping-cart</li>
+                                <li><i class="uk-icon-sign-in"></i> sign-in</li>
+                                <li><i class="uk-icon-sign-out"></i> sign-out</li>
+                                <li><i class="uk-icon-signal"></i> signal</li>
+                                <li><i class="uk-icon-sitemap"></i> sitemap</li>
+                                <li><i class="uk-icon-sliders"></i> sliders</li>
+                                <li><i class="uk-icon-smile-o"></i> smile-o</li>
+                                <li><i class="uk-icon-soccer-ball-o"></i> soccer-ball-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-sort"></i> sort</li>
+                                <li><i class="uk-icon-sort-alpha-asc"></i> sort-alpha-asc</li>
+                                <li><i class="uk-icon-sort-alpha-desc"></i> sort-alpha-desc</li>
+                                <li><i class="uk-icon-sort-amount-asc"></i> sort-amount-asc</li>
+                                <li><i class="uk-icon-sort-amount-desc"></i> sort-amount-desc</li>
+                                <li><i class="uk-icon-sort-asc"></i> sort-asc</li>
+                                <li><i class="uk-icon-sort-desc"></i> sort-desc</li>
+                                <li><i class="uk-icon-sort-down"></i> sort-down <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-sort-numeric-asc"></i> sort-numeric-asc</li>
+                                <li><i class="uk-icon-sort-numeric-desc"></i> sort-numeric-desc</li>
+                                <li><i class="uk-icon-sort-up"></i> sort-up <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-space-shuttle"></i> space-shuttle</li>
+                                <li><i class="uk-icon-spinner"></i> spinner</li>
+                                <li><i class="uk-icon-spoon"></i> spoon</li>
+                                <li><i class="uk-icon-square"></i> square</li>
+                                <li><i class="uk-icon-square-o"></i> square-o</li>
+                                <li><i class="uk-icon-star"></i> star</li>
+                                <li><i class="uk-icon-star-half"></i> star-half</li>
+                                <li><i class="uk-icon-star-half-empty"></i> star-half-empty <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-star-half-full"></i> star-half-full <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-star-half-o"></i> star-half-o</li>
+                                <li><i class="uk-icon-star-o"></i> star-o</li>
+                                <li><i class="uk-icon-street-view"></i> street-view</li>
+                                <li><i class="uk-icon-suitcase"></i> suitcase</li>
+                                <li><i class="uk-icon-sun-o"></i> sun-o</li>
+                                <li><i class="uk-icon-support"></i> support <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-tablet"></i> tablet</li>
+                                <li><i class="uk-icon-tachometer"></i> tachometer</li>
+                                <li><i class="uk-icon-tag"></i> tag</li>
+                                <li><i class="uk-icon-tags"></i> tags</li>
+                                <li><i class="uk-icon-tasks"></i> tasks</li>
+                                <li><i class="uk-icon-taxi"></i> taxi</li>
+                                <li><i class="uk-icon-terminal"></i> terminal</li>
+                                <li><i class="uk-icon-thumb-tack"></i> thumb-tack</li>
+                                <li><i class="uk-icon-thumbs-down"></i> thumbs-down</li>
+                                <li><i class="uk-icon-thumbs-o-down"></i> thumbs-o-down</li>
+                                <li><i class="uk-icon-thumbs-o-up"></i> thumbs-o-up</li>
+                                <li><i class="uk-icon-thumbs-up"></i> thumbs-up</li>
+                                <li><i class="uk-icon-ticket"></i> ticket</li>
+                                <li><i class="uk-icon-times"></i> times</li>
+                                <li><i class="uk-icon-times-circle"></i> times-circle</li>
+                                <li><i class="uk-icon-times-circle-o"></i> times-circle-o</li>
+                                <li><i class="uk-icon-tint"></i> tint</li>
+                                <li><i class="uk-icon-toggle-down"></i> toggle-down <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-left"></i> toggle-left <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-off"></i> toggle-off</li>
+                                <li><i class="uk-icon-toggle-on"></i> toggle-on</li>
+                                <li><i class="uk-icon-toggle-right"></i> toggle-right <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-up"></i> toggle-up <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-trash"></i> trash</li>
+                                <li><i class="uk-icon-trash-o"></i> trash-o</li>
+                                <li><i class="uk-icon-tree"></i> tree</li>
+                                <li><i class="uk-icon-trophy"></i> trophy</li>
+                                <li><i class="uk-icon-truck"></i> truck</li>
+                                <li><i class="uk-icon-tty"></i> tty</li>
+                                <li><i class="uk-icon-umbrella"></i> umbrella</li>
+                                <li><i class="uk-icon-university"></i> university</li>
+                                <li><i class="uk-icon-unlock"></i> unlock</li>
+                                <li><i class="uk-icon-unlock-alt"></i> unlock-alt</li>
+                                <li><i class="uk-icon-unsorted"></i> unsorted <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-upload"></i> upload</li>
+                                <li><i class="uk-icon-user"></i> user</li>
+                                <li><i class="uk-icon-user-plus"></i> user-plus</li>
+                                <li><i class="uk-icon-user-secret"></i> user-secret</li>
+                                <li><i class="uk-icon-user-times"></i> user-times</li>
+                                <li><i class="uk-icon-users"></i> users</li>
+                                <li><i class="uk-icon-video-camera"></i> video-camera</li>
+                                <li><i class="uk-icon-volume-down"></i> volume-down</li>
+                                <li><i class="uk-icon-volume-off"></i> volume-off</li>
+                                <li><i class="uk-icon-volume-up"></i> volume-up</li>
+                                <li><i class="uk-icon-warning"></i> warning <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-wheelchair"></i> wheelchair</li>
+                                <li><i class="uk-icon-wifi"></i> wifi</li>
+                                <li><i class="uk-icon-wrench"></i> wrench</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Transportation Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-ambulance"></i> ambulance</li>
+                                <li><i class="uk-icon-automobile"></i> automobile <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-bicycle"></i> bicycle</li>
+                                <li><i class="uk-icon-bus"></i> bus</li>
+                                <li><i class="uk-icon-cab"></i> cab <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-car"></i> car</li>
+                                <li><i class="uk-icon-fighter-jet"></i> fighter-jet</li>
+                                <li><i class="uk-icon-motorcycle"></i> motorcycle</li>
+                                <li><i class="uk-icon-plane"></i> plane</li>
+                                <li><i class="uk-icon-rocket"></i> rocket</li>
+                                <li><i class="uk-icon-ship"></i> ship</li>
+                                <li><i class="uk-icon-space-shuttle"></i> space-shuttle</li>
+                                <li><i class="uk-icon-subway"></i> subway</li>
+                                <li><i class="uk-icon-taxi"></i> taxi</li>
+                                <li><i class="uk-icon-train"></i> train</li>
+                                <li><i class="uk-icon-truck"></i> truck</li>
+                                <li><i class="uk-icon-wheelchair"></i> wheelchair</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Gender Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-circle-thin"></i> circle-thin</li>
+                                <li><i class="uk-icon-genderless"></i> genderless <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-mars"></i> mars</li>
+                                <li><i class="uk-icon-mars-double"></i> mars-double</li>
+                                <li><i class="uk-icon-mars-stroke"></i> mars-stroke</li>
+                                <li><i class="uk-icon-mars-stroke-h"></i> mars-stroke-h</li>
+                                <li><i class="uk-icon-mars-stroke-v"></i> mars-stroke-v</li>
+                                <li><i class="uk-icon-mercury"></i> mercury</li>
+                                <li><i class="uk-icon-neuter"></i> neuter</li>
+                                <li><i class="uk-icon-transgender"></i> transgender</li>
+                                <li><i class="uk-icon-transgender-alt"></i> transgender-alt</li>
+                                <li><i class="uk-icon-venus"></i> venus</li>
+                                <li><i class="uk-icon-venus-double"></i> venus-double</li>
+                                <li><i class="uk-icon-venus-mars"></i> venus-mars</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>File Type Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-file"></i> file</li>
+                                <li><i class="uk-icon-file-archive-o"></i> file-archive-o</li>
+                                <li><i class="uk-icon-file-audio-o"></i> file-audio-o</li>
+                                <li><i class="uk-icon-file-code-o"></i> file-code-o</li>
+                                <li><i class="uk-icon-file-excel-o"></i> file-excel-o</li>
+                                <li><i class="uk-icon-file-image-o"></i> file-image-o</li>
+                                <li><i class="uk-icon-file-movie-o"></i> file-movie-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-o"></i> file-o</li>
+                                <li><i class="uk-icon-file-pdf-o"></i> file-pdf-o</li>
+                                <li><i class="uk-icon-file-photo-o"></i> file-photo-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-picture-o"></i> file-picture-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-powerpoint-o"></i> file-powerpoint-o</li>
+                                <li><i class="uk-icon-file-sound-o"></i> file-sound-o <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-file-text"></i> file-text</li>
+                                <li><i class="uk-icon-file-text-o"></i> file-text-o</li>
+                                <li><i class="uk-icon-file-video-o"></i> file-video-o</li>
+                                <li><i class="uk-icon-file-word-o"></i> file-word-o</li>
+                                <li><i class="uk-icon-file-zip-o"></i> file-zip-o <span class="uk-text-muted">(alias)</span></li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Spinner Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-circle-o-notch"></i> circle-o-notch</li>
+                                <li><i class="uk-icon-cog"></i> cog</li>
+                                <li><i class="uk-icon-gear"></i> gear <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-refresh"></i> refresh</li>
+                                <li><i class="uk-icon-spinner"></i> spinner<li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Form Control Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-check-square"></i> check-square</li>
+                                <li><i class="uk-icon-check-square-o"></i> check-square-o</li>
+                                <li><i class="uk-icon-circle"></i> circle</li>
+                                <li><i class="uk-icon-circle-o"></i> circle-o</li>
+                                <li><i class="uk-icon-dot-circle-o"></i> dot-circle-o</li>
+                                <li><i class="uk-icon-minus-square"></i> minus-square</li>
+                                <li><i class="uk-icon-minus-square-o"></i> minus-square-o</li>
+                                <li><i class="uk-icon-plus-square"></i> plus-square</li>
+                                <li><i class="uk-icon-plus-square-o"></i> plus-square-o</li>
+                                <li><i class="uk-icon-square"></i> square</li>
+                                <li><i class="uk-icon-square-o"></i> square-o</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Payment Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-cc-amex"></i> cc-amex</li>
+                                <li><i class="uk-icon-cc-discover"></i> cc-discover</li>
+                                <li><i class="uk-icon-cc-mastercard"></i> cc-mastercard</li>
+                                <li><i class="uk-icon-cc-paypal"></i> cc-paypal</li>
+                                <li><i class="uk-icon-cc-stripe"></i> cc-stripe</li>
+                                <li><i class="uk-icon-cc-visa"></i> cc-visa</li>
+                                <li><i class="uk-icon-credit-card"></i> credit-card</li>
+                                <li><i class="uk-icon-google-wallet"></i> google-wallet</li>
+                                <li><i class="uk-icon-paypal"></i> paypal</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Currency Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-bitcoin"></i> bitcoin <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-btc"></i> btc</li>
+                                <li><i class="uk-icon-cny"></i> cny <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-dollar"></i> dollar <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-eur"></i> eur</li>
+                                <li><i class="uk-icon-euro"></i> euro <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-gbp"></i> gbp</li>
+                                <li><i class="uk-icon-ils"></i> ils</li>
+                                <li><i class="uk-icon-inr"></i> inr</li>
+                                <li><i class="uk-icon-jpy"></i> jpy</li>
+                                <li><i class="uk-icon-krw"></i> krw</li>
+                                <li><i class="uk-icon-money"></i> money</li>
+                                <li><i class="uk-icon-rmb"></i> rmb <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-rouble"></i> rouble <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-rub"></i> rub</li>
+                                <li><i class="uk-icon-ruble"></i> ruble <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-rupee"></i> rupee <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-shekel"></i> shekel <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-sheqel"></i> sheqel <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-try"></i> try</li>
+                                <li><i class="uk-icon-turkish-lira"></i> turkish-lira <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-usd"></i> usd</li>
+                                <li><i class="uk-icon-won"></i> won <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-yen"></i> yen <span class="uk-text-muted">(alias)</span></li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Text Editor Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-align-center"></i> align-center</li>
+                                <li><i class="uk-icon-align-justify"></i> align-justify</li>
+                                <li><i class="uk-icon-align-left"></i> align-left</li>
+                                <li><i class="uk-icon-align-right"></i> align-right</li>
+                                <li><i class="uk-icon-bold"></i> bold</li>
+                                <li><i class="uk-icon-chain"></i> chain <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-chain-broken"></i> chain-broken</li>
+                                <li><i class="uk-icon-clipboard"></i> clipboard</li>
+                                <li><i class="uk-icon-columns"></i> columns</li>
+                                <li><i class="uk-icon-copy"></i> copy <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-cut"></i> cut <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-dedent"></i> dedent <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-eraser"></i> eraser</li>
+                                <li><i class="uk-icon-file"></i> file</li>
+                                <li><i class="uk-icon-file-o"></i> file-o</li>
+                                <li><i class="uk-icon-file-text"></i> file-text</li>
+                                <li><i class="uk-icon-file-text-o"></i> file-text-o</li>
+                                <li><i class="uk-icon-files-o"></i> files-o</li>
+                                <li><i class="uk-icon-floppy-o"></i> floppy-o</li>
+                                <li><i class="uk-icon-font"></i> font</li>
+                                <li><i class="uk-icon-header"></i> header</li>
+                                <li><i class="uk-icon-indent"></i> indent</li>
+                                <li><i class="uk-icon-italic"></i> italic</li>
+                                <li><i class="uk-icon-link"></i> link</li>
+                                <li><i class="uk-icon-list"></i> list</li>
+                                <li><i class="uk-icon-list-alt"></i> list-alt</li>
+                                <li><i class="uk-icon-list-ol"></i> list-ol</li>
+                                <li><i class="uk-icon-list-ul"></i> list-ul</li>
+                                <li><i class="uk-icon-outdent"></i> outdent</li>
+                                <li><i class="uk-icon-paperclip"></i> paperclip</li>
+                                <li><i class="uk-icon-paragraph"></i> paragraph</li>
+                                <li><i class="uk-icon-paste"></i> paste <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-repeat"></i> repeat</li>
+                                <li><i class="uk-icon-rotate-left"></i> rotate-left <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-rotate-right"></i> rotate-right <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-save"></i> save <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-scissors"></i> scissors</li>
+                                <li><i class="uk-icon-strikethrough"></i> strikethrough</li>
+                                <li><i class="uk-icon-subscript"></i> subscript</li>
+                                <li><i class="uk-icon-superscript"></i> superscript</li>
+                                <li><i class="uk-icon-table"></i> table</li>
+                                <li><i class="uk-icon-text-height"></i> text-height</li>
+                                <li><i class="uk-icon-text-width"></i> text-width</li>
+                                <li><i class="uk-icon-th"></i> th</li>
+                                <li><i class="uk-icon-th-large"></i> th-large</li>
+                                <li><i class="uk-icon-th-list"></i> th-list</li>
+                                <li><i class="uk-icon-underline"></i> underline</li>
+                                <li><i class="uk-icon-undo"></i> undo</li>
+                                <li><i class="uk-icon-unlink"></i> unlink <span class="uk-text-muted">(alias)</span></li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Directional Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-angle-double-down"></i> angle-double-down</li>
+                                <li><i class="uk-icon-angle-double-left"></i> angle-double-left</li>
+                                <li><i class="uk-icon-angle-double-right"></i> angle-double-right</li>
+                                <li><i class="uk-icon-angle-double-up"></i> angle-double-up</li>
+                                <li><i class="uk-icon-angle-down"></i> angle-down</li>
+                                <li><i class="uk-icon-angle-left"></i> angle-left</li>
+                                <li><i class="uk-icon-angle-right"></i> angle-right</li>
+                                <li><i class="uk-icon-angle-up"></i> angle-up</li>
+                                <li><i class="uk-icon-arrow-circle-down"></i> arrow-circle-down</li>
+                                <li><i class="uk-icon-arrow-circle-left"></i> arrow-circle-left</li>
+                                <li><i class="uk-icon-arrow-circle-o-down"></i> arrow-circle-o-down</li>
+                                <li><i class="uk-icon-arrow-circle-o-left"></i> arrow-circle-o-left</li>
+                                <li><i class="uk-icon-arrow-circle-o-right"></i> arrow-circle-o-right</li>
+                                <li><i class="uk-icon-arrow-circle-o-up"></i> arrow-circle-o-up</li>
+                                <li><i class="uk-icon-arrow-circle-right"></i> arrow-circle-right</li>
+                                <li><i class="uk-icon-arrow-circle-up"></i> arrow-circle-up</li>
+                                <li><i class="uk-icon-arrow-down"></i> arrow-down</li>
+                                <li><i class="uk-icon-arrow-left"></i> arrow-left</li>
+                                <li><i class="uk-icon-arrow-right"></i> arrow-right</li>
+                                <li><i class="uk-icon-arrow-up"></i> arrow-up</li>
+                                <li><i class="uk-icon-arrows"></i> arrows</li>
+                                <li><i class="uk-icon-arrows-alt"></i> arrows-alt</li>
+                                <li><i class="uk-icon-arrows-h"></i> arrows-h</li>
+                                <li><i class="uk-icon-arrows-v"></i> arrows-v</li>
+                                <li><i class="uk-icon-caret-down"></i> caret-down</li>
+                                <li><i class="uk-icon-caret-left"></i> caret-left</li>
+                                <li><i class="uk-icon-caret-right"></i> caret-right</li>
+                                <li><i class="uk-icon-caret-square-o-down"></i> caret-square-o-down</li>
+                                <li><i class="uk-icon-caret-square-o-left"></i> caret-square-o-left</li>
+                                <li><i class="uk-icon-caret-square-o-right"></i> caret-square-o-right</li>
+                                <li><i class="uk-icon-caret-square-o-up"></i> caret-square-o-up</li>
+                                <li><i class="uk-icon-caret-up"></i> caret-up</li>
+                                <li><i class="uk-icon-chevron-circle-down"></i> chevron-circle-down</li>
+                                <li><i class="uk-icon-chevron-circle-left"></i> chevron-circle-left</li>
+                                <li><i class="uk-icon-chevron-circle-right"></i> chevron-circle-right</li>
+                                <li><i class="uk-icon-chevron-circle-up"></i> chevron-circle-up</li>
+                                <li><i class="uk-icon-chevron-down"></i> chevron-down</li>
+                                <li><i class="uk-icon-chevron-left"></i> chevron-left</li>
+                                <li><i class="uk-icon-chevron-right"></i> chevron-right</li>
+                                <li><i class="uk-icon-chevron-up"></i> chevron-up</li>
+                                <li><i class="uk-icon-hand-o-down"></i> hand-o-down</li>
+                                <li><i class="uk-icon-hand-o-left"></i> hand-o-left</li>
+                                <li><i class="uk-icon-hand-o-right"></i> hand-o-right</li>
+                                <li><i class="uk-icon-hand-o-up"></i> hand-o-up</li>
+                                <li><i class="uk-icon-long-arrow-down"></i> long-arrow-down</li>
+                                <li><i class="uk-icon-long-arrow-left"></i> long-arrow-left</li>
+                                <li><i class="uk-icon-long-arrow-right"></i> long-arrow-right</li>
+                                <li><i class="uk-icon-long-arrow-up"></i> long-arrow-up</li>
+                                <li><i class="uk-icon-toggle-down"></i> toggle-down <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-left"></i> toggle-left <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-right"></i> toggle-right <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-toggle-up"></i> toggle-up <span class="uk-text-muted">(alias)</span></li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Video Player Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-arrows-alt"></i> arrows-alt</li>
+                                <li><i class="uk-icon-backward"></i> backward</li>
+                                <li><i class="uk-icon-compress"></i> compress</li>
+                                <li><i class="uk-icon-eject"></i> eject</li>
+                                <li><i class="uk-icon-expand"></i> expand</li>
+                                <li><i class="uk-icon-fast-backward"></i> fast-backward</li>
+                                <li><i class="uk-icon-fast-forward"></i> fast-forward</li>
+                                <li><i class="uk-icon-forward"></i> forward</li>
+                                <li><i class="uk-icon-pause"></i> pause</li>
+                                <li><i class="uk-icon-play"></i> play</li>
+                                <li><i class="uk-icon-play-circle"></i> play-circle</li>
+                                <li><i class="uk-icon-play-circle-o"></i> play-circle-o</li>
+                                <li><i class="uk-icon-step-backward"></i> step-backward</li>
+                                <li><i class="uk-icon-step-forward"></i> step-forward</li>
+                                <li><i class="uk-icon-stop"></i> stop</li>
+                                <li><i class="uk-icon-youtube-play"></i> youtube-play</li>
+                            </ul>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Brand Icons</h3>
+
+                            <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-4 tm-icons">
+                                <li><i class="uk-icon-adn"></i> adn</li>
+                                <li><i class="uk-icon-android"></i> android</li>
+                                <li><i class="uk-icon-angellist"></i> angellist</li>
+                                <li><i class="uk-icon-apple"></i> apple</li>
+                                <li><i class="uk-icon-behance"></i> behance</li>
+                                <li><i class="uk-icon-behance-square"></i> behance-square</li>
+                                <li><i class="uk-icon-bitbucket"></i> bitbucket</li>
+                                <li><i class="uk-icon-bitbucket-square"></i> bitbucket-square</li>
+                                <li><i class="uk-icon-bitcoin"></i> bitcoin <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-btc"></i> btc</li>
+                                <li><i class="uk-icon-buysellads"></i> buysellads</li>
+                                <li><i class="uk-icon-cc-amex"></i> cc-amex</li>
+                                <li><i class="uk-icon-cc-discover"></i> cc-discover</li>
+                                <li><i class="uk-icon-cc-mastercard"></i> cc-mastercard</li>
+                                <li><i class="uk-icon-cc-paypal"></i> cc-paypal</li>
+                                <li><i class="uk-icon-cc-stripe"></i> cc-stripe</li>
+                                <li><i class="uk-icon-cc-visa"></i> cc-visa</li>
+                                <li><i class="uk-icon-codepen"></i> codepen</li>
+                                <li><i class="uk-icon-connectdevelop"></i> connectdevelop</li>
+                                <li><i class="uk-icon-css3"></i> css3</li>
+                                <li><i class="uk-icon-dashcube"></i> dashcube</li>
+                                <li><i class="uk-icon-delicious"></i> delicious</li>
+                                <li><i class="uk-icon-deviantart"></i> deviantart</li>
+                                <li><i class="uk-icon-digg"></i> digg</li>
+                                <li><i class="uk-icon-dribbble"></i> dribbble</li>
+                                <li><i class="uk-icon-dropbox"></i> dropbox</li>
+                                <li><i class="uk-icon-drupal"></i> drupal</li>
+                                <li><i class="uk-icon-empire"></i> empire</li>
+                                <li><i class="uk-icon-facebook"></i> facebook</li>
+                                <li><i class="uk-icon-facebook-f"></i> facebook-f <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-facebook-official"></i> facebook-official</li>
+                                <li><i class="uk-icon-facebook-square"></i> facebook-square</li>
+                                <li><i class="uk-icon-flickr"></i> flickr</li>
+                                <li><i class="uk-icon-forumbee"></i> forumbee</li>
+                                <li><i class="uk-icon-foursquare"></i> foursquare</li>
+                                <li><i class="uk-icon-ge"></i> ge <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-git"></i> git</li>
+                                <li><i class="uk-icon-git-square"></i> git-square</li>
+                                <li><i class="uk-icon-github"></i> github</li>
+                                <li><i class="uk-icon-github-alt"></i> github-alt</li>
+                                <li><i class="uk-icon-github-square"></i> github-square</li>
+                                <li><i class="uk-icon-gittip"></i> gittip <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-google"></i> google</li>
+                                <li><i class="uk-icon-google-plus"></i> google-plus</li>
+                                <li><i class="uk-icon-google-plus-square"></i> google-plus-square</li>
+                                <li><i class="uk-icon-google-wallet"></i> google-wallet</li>
+                                <li><i class="uk-icon-gratipay"></i> gratipay</li>
+                                <li><i class="uk-icon-hacker-news"></i> hacker-news</li>
+                                <li><i class="uk-icon-html5"></i> html5</li>
+                                <li><i class="uk-icon-instagram"></i> instagram</li>
+                                <li><i class="uk-icon-ioxhost"></i> ioxhost</li>
+                                <li><i class="uk-icon-joomla"></i> joomla</li>
+                                <li><i class="uk-icon-jsfiddle"></i> jsfiddle</li>
+                                <li><i class="uk-icon-lastfm"></i> lastfm</li>
+                                <li><i class="uk-icon-lastfm-square"></i> lastfm-square</li>
+                                <li><i class="uk-icon-leanpub"></i> leanpub</li>
+                                <li><i class="uk-icon-linkedin"></i> linkedin</li>
+                                <li><i class="uk-icon-linkedin-square"></i> linkedin-square</li>
+                                <li><i class="uk-icon-linux"></i> linux</li>
+                                <li><i class="uk-icon-maxcdn"></i> maxcdn</li>
+                                <li><i class="uk-icon-meanpath"></i> meanpath</li>
+                                <li><i class="uk-icon-medium-logo"></i> medium</li>
+                                <li><i class="uk-icon-openid"></i> openid</li>
+                                <li><i class="uk-icon-pagelines"></i> pagelines</li>
+                                <li><i class="uk-icon-paypal"></i> paypal</li>
+                                <li><i class="uk-icon-pied-piper"></i> pied-piper</li>
+                                <li><i class="uk-icon-pied-piper-alt"></i> pied-piper-alt</li>
+                                <li><i class="uk-icon-pinterest"></i> pinterest</li>
+                                <li><i class="uk-icon-pinterest-p"></i> pinterest-p</li>
+                                <li><i class="uk-icon-pinterest-square"></i> pinterest-square</li>
+                                <li><i class="uk-icon-qq"></i> qq</li>
+                                <li><i class="uk-icon-ra"></i> ra <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-rebel"></i> rebel</li>
+                                <li><i class="uk-icon-reddit"></i> reddit</li>
+                                <li><i class="uk-icon-reddit-square"></i> reddit-square</li>
+                                <li><i class="uk-icon-renren"></i> renren</li>
+                                <li><i class="uk-icon-sellsy"></i> sellsy</li>
+                                <li><i class="uk-icon-share-alt"></i> share-alt</li>
+                                <li><i class="uk-icon-share-alt-square"></i> share-alt-square</li>
+                                <li><i class="uk-icon-shirtsinbulk"></i> shirtsinbulk</li>
+                                <li><i class="uk-icon-simplybuilt"></i> simplybuilt</li>
+                                <li><i class="uk-icon-skyatlas"></i> skyatlas</li>
+                                <li><i class="uk-icon-skype"></i> skype</li>
+                                <li><i class="uk-icon-slack"></i> slack</li>
+                                <li><i class="uk-icon-slideshare"></i> slideshare</li>
+                                <li><i class="uk-icon-soundcloud"></i> soundcloud</li>
+                                <li><i class="uk-icon-spotify"></i> spotify</li>
+                                <li><i class="uk-icon-stack-exchange"></i> stack-exchange</li>
+                                <li><i class="uk-icon-stack-overflow"></i> stack-overflow</li>
+                                <li><i class="uk-icon-steam"></i> steam</li>
+                                <li><i class="uk-icon-steam-square"></i> steam-square</li>
+                                <li><i class="uk-icon-stumbleupon"></i> stumbleupon</li>
+                                <li><i class="uk-icon-stumbleupon-circle"></i> stumbleupon-circle</li>
+                                <li><i class="uk-icon-tencent-weibo"></i> tencent-weibo</li>
+                                <li><i class="uk-icon-trello"></i> trello</li>
+                                <li><i class="uk-icon-tumblr"></i> tumblr</li>
+                                <li><i class="uk-icon-tumblr-square"></i> tumblr-square</li>
+                                <li><i class="uk-icon-twitch"></i> twitch</li>
+                                <li><i class="uk-icon-twitter"></i> twitter</li>
+                                <li><i class="uk-icon-twitter-square"></i> twitter-square</li>
+                                <li><i class="uk-icon-viacoin"></i> viacoin</li>
+                                <li><i class="uk-icon-vimeo-square"></i> vimeo-square</li>
+                                <li><i class="uk-icon-vine"></i> vine</li>
+                                <li><i class="uk-icon-vk"></i> vk</li>
+                                <li><i class="uk-icon-wechat"></i> wechat <span class="uk-text-muted">(alias)</span></li>
+                                <li><i class="uk-icon-weibo"></i> weibo</li>
+                                <li><i class="uk-icon-weixin"></i> weixin</li>
+                                <li><i class="uk-icon-whatsapp"></i> whatsapp</li>
+                                <li><i class="uk-icon-windows"></i> windows</li>
+                                <li><i class="uk-icon-wordpress"></i> wordpress</li>
+                                <li><i class="uk-icon-xing"></i> xing</li>
+                                <li><i class="uk-icon-xing-square"></i> xing-square</li>
+                                <li><i class="uk-icon-yahoo"></i> yahoo</li>
+                                <li><i class="uk-icon-yelp"></i> yelp</li>
+                                <li><i class="uk-icon-youtube"></i> youtube</li>
+                                <li><i class="uk-icon-youtube-play"></i> youtube-play</li>
+                                <li><i class="uk-icon-youtube-square"></i> youtube-square</li>
+                            </ul>
+                   
+                          
+</div>
+            </div></div></div>
+    
+
+    
+    
+    
+<div id="article-blocks"  class="uk-container uk-container-center small_padding" >
+
+    </div>
+
+    
+    
+
+    
+
+</div >
+   <!--/ Main Content-->
+
+    <!-- Bottom Content-->
+    <div id="bottom-block">
+        <div class="uk-container uk-container-center">
+            <div class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">About Zeyn</h3>
+                        <p>Cras mattis consectetur purus sit amet fermentum curabitur blandit tempus Integer posuere erat a ante venenatis dapibus posuere velit aliquet.Petierunt uti sibi concilium totius Galliae in diem certam indicere morbi leo risus, porta ac consectetur ac, vestibulum at eros. </p>
+
+                        <ul id="social-42" class="social shape-# size-# align-left">
+                            <li> <a href="#" target="_blank"><i class="icon-facebook"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-twitter"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-gplus"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-linkedin"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-pinterest"></i></a> </li>
+                        </ul>
+                        <!--/ Social-->
+
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">CATEGORIES</h3>
+                        <ul class="categories-module">
+                            <li>
+                                <h4><a href="index_blogger.html">Audio & Video</a></h4> </li>
+                            <li>
+                                <h4><a href="index_creative.html">Creative</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_classic.html">Demography Interest</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_3_columns.html">Uncategorized</a></h4> </li>
+                            <li>
+                                <h4><a href="index_hotel_travel.html">Worldwide Travelling</a></h4> </li>
+                            <li>
+                                <h4><a href="index_wedding.html">Wedding</a></h4> </li>
+                            <li>
+                                <h4><a href="index_automotive.html">Human & Nature Photography</a></h4> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Recent Posts</h3>
+                        <ul class="uk-list uk-list-line">
+                            <li> <a href="post_blog_classic.html">Nocturnum haec quis sed</a>
+                                <br><small>Admin - Feb 20 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Memory behind </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Fabio ve iudice vincam</a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Nihilne te nocturnum
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Sed haec quis possit
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Gallery</h3>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src1.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src2.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src3.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src4.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src5.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src6.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src7.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src8.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src9.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                    </div>
+                    <!--/ LightBox Pictures-->
+
+                </div>
+            </div>
+            <footer class="tm-footer">
+                <div class="uk-panel parallax modulebox"> Made by love. Designed and developed by <a href="http://h2theme.pro" target="_blank">h2theme</a> Copyright &copy; 2015 . </div>
+            </footer>
+            <!--/ Footer CopyRight-->
+            <div id="offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <div class="uk-panel parallax modulebox"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn" class="center">
+                        <a onclick="jQuery.UIkit.offcanvas.hide();" style="color:white !important;" class="uk-close uk-close-alt close-canvas"></a>
+                    </div>
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-parent uk-active"> <a href="index.html">Home Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="index.html">Corporate</a> </li>
+                                <li> <a href="index_classic.html">Classic</a> </li>
+                                <li> <a href="index_creative.html">Creative</a> </li>
+                                <li> <a href="index_blogger.html">Blogger</a> </li>
+                                <li> <a href="index_medical.html">Medical</a> </li>
+                                <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                <li> <a href="index_hosting.html">Hosting</a> </li>
+                                <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Landing Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="landing_event.html">Event</a> </li>
+                                <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                <li><a href="landing_launch.html">Launch</a> </li>
+                                <li><a href="landing_onepage.html">One Page</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li class="uk-parent"> <a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                        <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                        <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Our Team</a>
+                                    <ul>
+                                        <li><a href="our_team_one.html">Our Team One</a> </li>
+                                        <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                        <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> Contact Us</a>
+                                    <ul>
+                                        <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                        <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                        <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> About Us</a>
+                                    <ul>
+                                        <li><a href="about_us_one.html">About Us One</a> </li>
+                                        <li><a href="about_us_two.html">About Us Two</a> </li>
+                                        <li><a href="about_us_three.html">About Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services_page_one.html">Services Page One</a> </li>
+                                        <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                        <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Widgets</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+                                <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+                                <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                <li class="uk-active"><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Full Features</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                </li>
+                                <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Off Canvas Mobile Menu-->
+        </div>
+        <!--/ Container-->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+/* ========================================================================
+   Custom CSS
+ ========================================================================== */
+/*
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400';
+.primary_color_text {
+    color: #08a3e5;
+}
+.iconboxes h4,
+.iconboxes.effect6 h4,
+.iconboxes.effect7 .text-box h4,
+.iconboxes.effect8 .text-box h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+.iconboxes.effect7 .text-box {
+    margin-bottom: 35px;
+}
+.team_item h2,
+.team_item .profile-position {
+    font-weight: 300;
+}
+.uk-dotnav > * > * {
+    background-color: #ffac1a !Important;
+    border-color: #ffac1a !Important;
+}
+.uk-dotnav-contrast > .uk-active > * {
+    border-color: #ffac1a !Important;
+}
+.uk-navbar-toggle {
+    color: black !important;
+}
+#bottom-block .uk-panel-title {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+.uk-nav-navbar ul a {
+    color: white;
+}
+body,
+html {
+    font-family: 'Lato';
+}
+.counto {
+    font-family: 'Ubuntu';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu';
+}
+.uk-navbar-nav > li > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a,
+.uk-navbar-nav > li.uk-active > a {
+    font-family: 'Lato';
+    color: black;
+}
+.uk-navbar-nav>li>a:hover,
+.uk-navbar-nav>li>a:focus {
+    color: #08a3e5;
+}
+.uk-nav-navbar ul a {
+    color: white;
+}
+.uk-navbar-nav > li > a:after,
+.uk-navbar-nav > li > span:after,
+.uk-navbar-nav > li > a:before,
+.uk-navbar-nav > li > span:before,
+.uk-navbar-nav > li > a:after:after,
+.uk-navbar-nav > li > span:hover:after,
+.uk-navbar-nav > li > span:hover:before,
+.uk-navbar-nav > li > a:hover:before {
+    background: #08a3e5;
+}
+.uk-dotnav > * > * {
+    background-color: #08a3e5 !Important;
+    border-color: #08a3e5 !Important;
+}
+.uk-dotnav-contrast > .uk-active > * {
+    border-color: #08a3e5 !Important;
+}
+.iconboxes-5:hover .hi-icon-effect-5 .hi-icon,
+.iconboxes span:hover,
+.iconboxes-2:hover .section-icon i.hi-icon,
+.iconboxes-2:hover i,
+.iconboxes.effect-3 span:hover,
+.iconboxes-4:hover .section-icon,
+.iconboxes-4:hover i:hover,
+.iconboxes-4:hover .hi-icon-effect-5 .hi-icon,
+.iconboxes-4:hover .section-icon i:hover {
+    background-color: #08a3e5;
+    border-color: #08a3e5;
+    color: #08a3e5;
+}
+.iconboxes span:hover,
+.iconboxes.effect3 span:hover {
+    border-color: #08a3e5;
+}
+.iconboxes.effect3 span:hover:after,
+.iconboxes.effect3 span:hover:before,
+.iconboxes span:hover:after,
+.iconboxes span:hover:after,
+.iconboxes span:hover:before,
+.iconboxes-4:hover .section-icon:after,
+.iconboxes-4:hover .section-icon:before {
+    border-top-color: #08a3e5;
+}
+.iconboxes.effect6:hover,
+.iconboxes-1 span:hover {
+    background-color: #08a3e5;
+    border-color: #08a3e5;
+}
+.iconboxes.effect6 i,
+.iconboxes.effect7 i,
+.iconboxes.effect8 i {
+    border-color: #08a3e5;
+    color: #08a3e5;
+}
+.iconboxes-2:hover i,
+.iconboxes-2:hover i.hi-icon {
+    background-color: #08a3e5;
+    color: #ffffff;
+}
+.iconboxes-1 span:hover:after,
+.iconboxes-1 span:hover:before {
+    border-top: 11px solid #08a3e5;
+    border-top-color: #08a3e5;
+}
+::selection {
+    background: #08a3e5;
+}
+::-moz-selection {
+    background: #08a3e5;
+}
+#bottom-block {
+    background-color: #222;
+    color: #fff;
+}
+#bottom-block .uk-panel-title:after {
+    border-top: solid 2px #08a3e5;
+}
+#bottom-block .uk-panel-title {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    text-align: left;
+    font-weight: 400;
+}
+.pricing-table .uk-scrollspy-init-inview .plan-price,
+.pricing-table .uk-width-1-3 .plan-price,
+.pricing-table .uk-scrollspy-init-inview .plan-price span,
+.pricing-table .uk-width-1-3 .plan-price span,
+.pricing-table ul li .plan-price span.after-price {
+    color: white !important;
+}
+.pricing-table ul li.plan-action,
+.pricing-table ul li.plan-head {
+    background: #b1b9bb !important;
+}
+.pricing-table .featured ul li.plan-head,
+.pricing-table .featured ul li.plan-action {
+    background-color: #08a3e5 !important;
+    color: white !important;
+}
+.pricing-table .uk-scrollspy-init-inview ul p.hover-tip-text,
+.pricing-table .uk-width-1-3 ul p.hover-tip-text {
+    background: #222;
+    color: white;
+}
+.pricing-table .uk-scrollspy-init-inview ul li:nth-child(2n),
+.pricing-table .uk-width-1-3 ul li:nth-child(2n) {
+    background: #fbfbfb;
+}
+.uk-nav-navbar > li > a:hover,
+.uk-nav-side ul a:hover,
+.uk-nav-side ul a .uk-nav-navbar > li > a:focus,
+ul.uk-nav-sub > li:hover > a,
+.uk-nav-navbar > li:hover i,
+.uk-nav-navbar > li.uk-active > a,
+.uk-nav-navbar > li.uk-active > a > i,
+.uk-nav-navbar ul a:hover,
+.uk-nav-dropdown > li > a:hover,
+.uk-nav-dropdown > li > a:focus,
+.uk-nav-dropdown ul a,
+.uk-nav-dropdown ul a:hover,
+.uk-subnav > * >:hover,
+.uk-subnav > * >:focus,
+.uk-subnav > .uk-active > *,
+.uk-pagination > li > a:hover,
+.uk-pagination > li > a:focus,
+.uk-tab > li > a,
+.uk-tab > li > a:hover,
+.uk-tab > li > a:focus,
+.uk-nav-navbar ul li.uk-active a,
+.uk-tab > li.uk-open > a,
+.uk-button-link,
+.uk-button-link:hover,
+.uk-button-link:focus,
+.uk-button-link:active,
+.uk-button-link.uk-active,
+.uk-icon-button:hover,
+.uk-icon-button:focus,
+.uk-nav-search ul a,
+.uk-nav-search ul a:hover,
+ul.check .uk-icon-check,
+a,
+.uk-link,
+a:hover,
+.uk-link:hover,
+.team_item .profile-scocial a:hover,
+.team_item .profile-scocial i:hover,
+.team_item .profile-position {
+    color: #08a3e5;
+}
+.tagspopular li:hover,
+.tagspopular li:hover,
+.timeline .time-item:hover .content-line:before,
+.timeline .time-item:hover .content-line,
+.timeline .time-item .center-line.circle i,
+.timeline .time-item .center-line.square,
+.uk-badge,
+.uk-badge-warning,
+.contact_corporate .uk-button,
+.secondary_color_button,
+.btn-active,
+.text-hover-pre-title,
+.bgg,
+.uk-pagination > .uk-active > span,
+.uk-button-primary,
+.uk-contrast .uk-button-primary,
+.uk-progress-bar,
+.uk-progress-warning .uk-progress-bar,
+.bg-color {
+    background-color: #08a3e5;
+}
+.uk-nav-navbar ul.uk-nav-sub:hover {
+    border-top: 1px solid #08a3e5 !important;
+}
+.uk-navbar-toggle {
+    color: black !important;
+}
+.search-toggle i {
+    color: black !important;
+}
+.uk-nav-navbar ul a {
+    color: white;
+}
+body p {
+    line-height: 25px;
+}

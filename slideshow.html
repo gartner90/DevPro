@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeyn | Slideshow Short Code</title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="src/css/fontello.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/css/highlight.css">
+    <link rel="stylesheet" href="src/styles/corporate/custom.css">
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script src="src/js/highlight.js"></script>
+    <script src="src/js/components/lightbox.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false" type="text/javascript"></script>
+    <script src="src/js/components/slideshow.js"></script>
+    <script src="src/js/components/slideshow-fx.js"></script>
+    
+    <!-- Google Map script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            try {
+                var map, center = new google.maps.LatLng(-7.2852292, 112.6809869),
+                    style = [{
+                        "featureType": "water",
+                        "stylers": [{
+                            "color": "#021019"
+                        }]
+                    }, {
+                        "featureType": "landscape",
+                        "stylers": [{
+                            "color": "#08304b"
+                        }]
+                    }, {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#0c4152"
+                        }, {
+                            "lightness": 5
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b434f"
+                        }, {
+                            "lightness": 25
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b3d51"
+                        }, {
+                            "lightness": 16
+                        }]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    }, {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#000000"
+                        }, {
+                            "lightness": 13
+                        }]
+                    }, {
+                        "featureType": "transit",
+                        "stylers": [{
+                            "color": "#146474"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#144b53"
+                        }, {
+                            "lightness": 14
+                        }, {
+                            "weight": 1.4
+                        }]
+                    }],
+                    mapOptions = {
+                        center: center,
+                        mapTypeControl: false,
+                        zoom: 14,
+                        scrollwheel: false,
+                        styles: style
+                    };
+                var iconMarker = {
+                    url: 'images/map_marker.png'
+                };
+                map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: center,
+                    map: map,
+                    icon: iconMarker
+                });
+            } catch ($err) {}
+        });
+    </script>
+
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div id="header-block" class="wide-header pages pagebg2">
+        <!-- Container -->
+        <div class="uk-container uk-container-center">
+            <a class="tm-logo" href="index.html"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn"> </a>
+            <!--/Logo-->
+            <nav class="tm-navbar uk-navbar">
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-parent uk-active" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="index.html">Corporate</a> </li>
+                                        <li> <a href="index_classic.html">Classic</a> </li>
+                                        <li> <a href="index_creative.html">Creative</a> </li>
+                                        <li> <a href="index_blogger.html">Blogger</a> </li>
+                                        <li> <a href="index_medical.html">Medical</a> </li>
+                                        <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                        <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                        <li> <a href="index_hosting.html">Hosting</a> </li>
+                                        <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                        <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                        <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Landing Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="landing_event.html">Event</a> </li>
+                                        <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                        <li><a href="landing_launch.html">Launch</a> </li>
+                                        <li><a href="landing_onepage.html">One Page</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-5" style="min-width: 1125px; max-width: 1125px; width:225px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Blog
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                                <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                                <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Our Team
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="our_team_one.html">Our Team One</a> </li>
+                                                <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                                <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Contact Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                                <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                                <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">About Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="about_us_one.html">About Us One</a> </li>
+                                                <li><a href="about_us_two.html">About Us Two</a> </li>
+                                                <li><a href="about_us_three.html">About Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Services
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="services_page_one.html">Services Page One</a> </li>
+                                                <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                                <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Widgets</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3 uk-dropdown-center" style="min-width: 700px; max-width: 700px; width:470px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                        <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                        <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                        <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                        <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                        <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                        <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                        <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                        <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                        <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                        <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                        <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                        <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+</ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+
+                                        <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                        <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                        <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                        <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                        <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                        <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                        <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                        <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                        <li class="uk-active"><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                        <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                        <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                        <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                        <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                        <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                        <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                        <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                        <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                        <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                        <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                        <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                        <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                        <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                        <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                        <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                        <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Full Features</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                        <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                        <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                        <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                        <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a></li>
+<li> <a href="font_fontello.html"><i class="uk-icon-cube"></i>Fontello Icons</a></li>
+                                        <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <!--/ Menu Items With Dropdown-->
+                    <ul class="uk-navbar-nav uk-hidden-small">
+                        <li class="uk-parent" data-uk-dropdown> <a href="#">Contact</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <div class="uk-grid menu_module">
+                                    <div class="uk-width-1-2">
+                                        <h4 class="bold" style="color:white;">Say Hello To Us</h4>
+                                        <p class="p" style="color:white;">Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                                        <div id="sp_quickcontact246" class="sp_quickcontact">
+                                            <div id="sp_qc_status"></div>
+                                            <form id="sp-quickcontact-form">
+                                                <div class="sp_qc_clr"></div>
+                                                <div class="uk-grid contact_forms">
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <span class="your-name">
+                                                <input type="text" name="name" class="name-input"
+                                                id="name"
+                                                onfocus="if (this.value=='Name') this.value='';"
+                                                onblur="if (this.value=='') this.value='Name';"
+                                                value="Name"
+                                                required
+                                                />
+                                                </span>
+                                                        <span class="your-email">
+                                                    <input type="text" name="email" id="email"
+                                                    class="email-input"
+                                                    onblur="if (this.value=='') this.value='Email';"
+                                                    value="Email"
+                                                    onfocus="if (this.value=='Email') this.value='';"
+                                                    required
+                                                    /></span>
+                                                        <span class="your-subject">
+                                                        <input type="text" name="subject" class="subject-input"
+                                                        id="subject"
+                                                        onfocus="if (this.value=='Phone') this.value='';"
+                                                        onblur="if (this.value=='') this.value='Phone';"
+                                                        value="Phone"
+                                                        /></span>
+                                                    </div>
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <textarea name="message" id="message" class="message-input" onfocus="if (this.value=='Message') this.value='';" onblur="if (this.value=='') this.value='Message';">Message</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="sp_qc_clr"></div>
+                                                <input id="sp_qc_submit" class="button uk-button uk-button-primary uk-float-right" style="padding: 0 18px;  text-transform: uppercase;" type="submit" value="Send" />
+                                                <div class="sp_qc_clr"></div>
+                                            </form>
+                                        </div>
+                                        <!--/Contact Form-->
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <div id="map1" class="google-map" style="height:322px;width:100%"></div>
+                                        <!--/Google Map-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <!--/Off Canvas Mobile Menu-->
+                    <div class="uk-navbar-flip">
+                        <div class="uk-navbar-content uk-hidden-small">
+                            <a href="#searchbar" class="search-toggle"><i class="uk-icon icon-search-6"></i></a>
+                            <div class="search-bar search-hidden">
+                                <form class="searchbar search-40 uk-search" method="post" role="search">
+                                    <input class="uk-search-field form-control" type="search" name="searchword" placeholder="search...">
+                                    <input type="hidden" name="Itemid" value="254"> <a class="search-close"><i class="uk-icon-close"></i></a>
+                                </form>
+                                <!--/Search Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+                        <a class="tm-logo-small" href="index.html"> <img src="images/zeyn_logo.png" width="135" height="40" alt="Zeyn" class="uk-responsive-height"> </a>
+                        <!--/ Mobile Mini Logo -->
+                    </div>
+            </nav>
+            <h1 class="page-title" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">Slideshow Short Code</h1>
+            <!--/Page Title With Background-->
+            <!--/Menu-->
+        </div>
+    </div>
+    <!--/Header-->
+
+    <div id="main-block">
+        <div class="uk-container uk-container-center">
+
+            <div class="tm-main">
+
+                <article class="uk-article">
+
+                    <h3 class="thin-border thin-left bold">Slideshow</h3>
+
+                    <p class="uk-article-lead">Create a responsive image or video slideshow with stunning transition effects, fullscreen mode and overlays.</p>
+
+                    <h3 id="usage"><a href="#usage" class="uk-link-reset">Usage</a></h3>
+
+                    <p>To create a slideshow, just add the <code>.uk-slideshow</code> class to a <code>&lt;ul&gt;</code> element and place your images inside the list items. In order to load the necessary JavaScript, you also need to add the <code>data-uk-slideshow</code> attribute.</p>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
+                        <li><img src="images/creav1.jpg" width="800" height="400" alt="">
+                        </li>
+                        <li><img src="images/creav2.jpg" width="800" height="400" alt="">
+                        </li>
+                        <li><img src="images/creav3.jpg" width="800" height="400" alt="">
+                        </li>
+                    </ul>
+
+                    <p><span class="uk-badge">Note</span> To activate autoplay, just add the <code>{autoplay:true}</code> option to the data attribute.</p>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}"&gt;
+    &lt;li&gt;&lt;img src="" width="" height="" alt=""&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="navigations"><a href="#navigations" class="uk-link-reset">Navigations</a></h3>
+
+                    <p>To navigate through your slides, just use the <code>data-uk-slideshow-item</code> attribute. To target the slides, you need to set the data attribute of every nav item to the number of the respective slideshow item. The elements with the <code>data-uk-slideshow-item</code> attribute need to be inside the <code>data-uk-slideshow</code> container.</p>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;div data-uk-slideshow&gt;
+    &lt;ul class="uk-slideshow"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li data-uk-slideshow-item="0"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-uk-slideshow-item="1"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+                    <p>Setting the attribute to <code>next</code> and <code>previous</code> will switch to the adjacent slides.</p>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;div data-uk-slideshow&gt;
+    &lt;ul class="uk-slideshow"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="" data-uk-slideshow-item="previous"&gt;&lt;/a&gt;
+    &lt;a href="" data-uk-slideshow-item="next"&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">Slidenav and Dotnav</a></h3>
+
+                    <p>The flexibility of the Slideshow component enables you to use any of the other UIkit components to navigate through items. For example the slidenav and dotnav</a> can be used to style the slideshow navigations as you can see below.</p>
+
+                    <h4 class="tm-article-subtitle">Example</h4>
+
+                    <div class="uk-slidenav-position" data-uk-slideshow>
+                        <ul class="uk-slideshow">
+                            <li><img src="images/medical1_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                            <li><img src="images/medical2_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                            <li><img src="images/medical3_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                        </ul>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                            <li data-uk-slideshow-item="0"><a href="#">Item 1</a>
+                            </li>
+                            <li data-uk-slideshow-item="1"><a href="#">Item 2</a>
+                            </li>
+                            <li data-uk-slideshow-item="2"><a href="#">Item 3</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h4 class="tm-article-subtitle">Markup</h4>
+
+                    <pre><code>&lt;div class="uk-slidenav-position" data-uk-slideshow&gt;
+    &lt;ul class="uk-slideshow"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"&gt;&lt;/a&gt;
+    &lt;a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"&gt;&lt;/a&gt;
+    &lt;ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center"&gt;
+        &lt;li data-uk-slideshow-item="0"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-uk-slideshow-item="1"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="animations"><a href="#animations" class="uk-link-reset">Transitions</a></h3>
+
+                    <p>The Slideshow component allows you to add different animations to items when switching between them. All you need to do is add the <code>animation</code> parameter to the data-attribute and define the animation that you want to apply. Check the table below for an overview of the animations provided.</p>
+
+                    <div class="uk-overflow-container">
+                        <table class="uk-table uk-text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>fade</code>
+                                    </td>
+                                    <td>The item fades in.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>scroll</code>
+                                    </td>
+                                    <td>The items scroll in.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>scale</code>
+                                    </td>
+                                    <td>The items scale up on out.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>swipe</code>
+                                    </td>
+                                    <td>The items swipe in and out.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>To apply these more advanced transitions, the <code>slideshow-fx.js</code> file needs to be included in the document head.</p>
+
+                    <div class="uk-overflow-container">
+                        <table class="uk-table uk-text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>slice-down</code>
+                                    </td>
+                                    <td>The items slide down in slices.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>slice-up</code>
+                                    </td>
+                                    <td>The items slide up in slices.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>slice-up-down</code>
+                                    </td>
+                                    <td>The sliced items slide in alterning directions.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>fold</code>
+                                    </td>
+                                    <td>The items are folded in.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>puzzle</code>
+                                    </td>
+                                    <td>The items are divided in squares that randomly fade in.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>boxes</code>
+                                    </td>
+                                    <td>The items are divided in squares that scale in diagonally from the top left corner.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>boxes-reverse</code>
+                                    </td>
+                                    <td>The items are divided in squares that scale in diagonally from the bottom right corner.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>random-fx</code>
+                                    </td>
+                                    <td>Different animations are applied randomly.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <ul class="uk-grid uk-grid-width-1-1 uk-grid-width-medium-1-2" data-uk-grid-margin>
+                        <li>
+                            <h3>Scroll</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Scale</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scale'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Swipe</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Slice Down</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-down'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Slice Up</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-up'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Slice Up Down</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-up-down'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Fold</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'fold'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Puzzle</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'puzzle'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Boxes</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'boxes'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Boxes Reverse</h3>
+                            <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'boxes-reverse'}">
+                                <ul class="uk-slideshow">
+                                    <li><img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                    </li>
+                                    <li><img src="images/Hero_3.jpg" width="800" height="400" alt="">
+                                    </li>
+                                </ul>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{animation: 'random-fx'}"&gt;...&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="ken-burns-effect"><a href="#ken-burns-effect" class="uk-link-reset">Ken Burns effect</a></h3>
+
+                    <p>The Ken Burns effect can also be applied to slideshow items. Just add the <code>{kenburns:true}</code> option to the data attribute. This effect can also be applied to videos.</p>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
+                        <ul class="uk-slideshow">
+                            <li><img src="images/realestate1_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                            <li><img src="images/realestate2_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                            <li><img src="images/realestate3_bg.jpg" width="800" height="400" alt="">
+                            </li>
+                        </ul>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                    </div>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{kenburns:true}"&gt;...&lt;/ul&gt;</code></pre> Custom animation duration:
+
+                    <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{kenburns:'30s'}"&gt;...&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="fullscreen"><a href="#fullscreen" class="uk-link-reset">Fullscreen slideshow</a></h3>
+
+                    <p>To create a fullscreen slideshow that stretches to fill the entire viewport, just add the <code>.uk-slideshow-fullscreen</code> class.</p>
+
+                    <h4 class="tm-article-subtitle">Markup</h4>
+
+                    <pre><code>&lt;ul class="uk-slideshow uk-slideshow-fullscreen" data-uk-slideshow&gt;...&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="overlays"><a href="#overlays" class="uk-link-reset">Overlays</a></h3>
+
+                    <p>You can also enhance slideshows with different overlays. Just add the <code>.uk-overlay-panel</code> to a <code>&lt;div&gt;</code> element inside the list item. Also add <code>.uk-overlay-background</code> and <code>.uk-overlay-fade</code> to show a background and a transition. To toggle the overlay once a slide becomes active add the <code>.uk-overlay-active</code> to the list container. For more options, check out the overlay component.</p>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <div class="uk-slidenav-position" data-uk-slideshow>
+                        <ul class="uk-slideshow uk-overlay-active">
+                            <li>
+                                <img src="images/automotive1_bg.jpg" width="800" height="400" alt="">
+                                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                    <div>
+                                        <h3>Overlay</h3>
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr,
+                                            <br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                        <button class="uk-button uk-button-primary">Button</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/automotive2_bg.jpg" width="800" height="400" alt="">
+                                <div class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
+                                    <h3>Overlay Top</h3>
+                                    <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/automotive3_bg.jpg" width="800" height="400" alt="">
+                                <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <h3>Overlay Bottom</h3>
+                                    <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/Hero_1.jpg" width="800" height="400" alt="">
+                                <div class="uk-overlay-panel uk-overlay-background uk-overlay-left uk-overlay-slide-left uk-width-1-4">
+                                    <h3>Overlay Left</h3>
+                                    <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/Hero_2.jpg" width="800" height="400" alt="">
+                                <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-1-4">
+                                    <h3>Overlay Right</h3>
+                                    <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                    </div>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;ul class="uk-slideshow uk-overlay-active" data-uk-slideshow&gt;
+    &lt;li&gt;
+        &lt;img src="" width="" height="" alt=""&gt;
+        &lt;div class="uk-overlay-panel uk-overlay-background uk-overlay-fade"&gt;...&lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="video"><a href="#video" class="uk-link-reset">Video</a></h3>
+
+                    <p>UIkit allows you to present both video elements and Iframes within a slideshow.</p>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <div class="uk-slidenav-position" data-uk-slideshow>
+                        <ul class="uk-slideshow">
+                            <li>
+                                <video width="600" height="400" autoplay loop muted controls>
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+                                        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2" type="video/ogg">
+                                </video>
+                            </li>
+                            <li>
+                                <iframe src="http://player.vimeo.com/video/1084537?title=0&amp;byline=0&amp;autoplay=1&amp;loop=1&amp;setVolume=0" width="500" height="281" frameborder="0" allowfullscreen></iframe>
+                            </li>
+                        </ul>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    </div>
+
+                    <h3 class="tm-article-subtitle">Markup</h3>
+
+                    <pre><code>&lt;!-- This is a slideshow with a video element --&gt;
+&lt;ul class="uk-slideshow"&gt;
+    &lt;li&gt;
+        &lt;video width="" height="" autoplay loop muted controls&gt;
+            &lt;source src="" type=""&gt;
+        &lt;/video&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- This is a slideshow with an Iframe --&gt;
+&lt;ul class="uk-slideshow"&gt;
+    &lt;li&gt;
+        &lt;iframe src="" width="" height="" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="content"><a href="#content" class="uk-link-reset">Content</a></h3>
+
+                    <p>You can basically insert any content, like text or an entire grid as slideshow items.</p>
+
+                    <h3 class="tm-article-subtitle">Example</h3>
+
+                    <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
+                        <ul class="uk-slideshow uk-text-center">
+                            <li>
+                                <div class="uk-panel uk-panel-box">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-3">
+                                            <img src="images/port1.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <div class="uk-width-2-3">
+                                            <h3 class="uk-panel-title">Headline 1</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                            <button class="uk-button">Read more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-2-3">
+                                            <h3 class="uk-panel-title">Headline 2</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                            <button class="uk-button">Read more</button>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <img src="images/port2.jpg" width="200" height="200" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="uk-slidenav dark uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                        <a href="#" class="uk-slidenav dark uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    </div>
+
+                    <hr class="uk-article-divider">
+
+                    <h3 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript Options</a></h3>
+
+                    <div class="uk-overflow-container space-bottom">
+                        <table class="uk-table uk-table-striped uk-text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Default</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>animation</code>
+                                    </td>
+                                    <td>'fade'</td>
+                                    <td>Defines the preferred transition between items.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>duration</code>
+                                    </td>
+                                    <td>500</td>
+                                    <td>Defines the transition duration.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>height</code>
+                                    </td>
+                                    <td>'auto'</td>
+                                    <td>Defines the slideshow height.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>start</code>
+                                    </td>
+                                    <td>0</td>
+                                    <td>Defines the first slideshow item to be displayed.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>autoplay</code>
+                                    </td>
+                                    <td>false</td>
+                                    <td>Defines whether or not the slideshow items should switch automatically.</td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                    <td><code>pauseOnHover</code>
+                                    </td>
+                                    <td>true</td>
+                                    <td>Pause autoplay when hovering a slideshow.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>autoplayInterval</code>
+                                    </td>
+                                    <td>7000</td>
+                                    <td>Defines the timespan between switching slideshow items.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>videoautoplay</code>
+                                    </td>
+                                    <td>true</td>
+                                    <td>Defines whether or not a video starts automatically.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>videomute</code>
+                                    </td>
+                                    <td>true</td>
+                                    <td>Defines whether or not a video is muted.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>kenburns</code>
+                                    </td>
+                                    <td>false</td>
+                                    <td>Defines whether or not the Ken Burns effect is active. If <code>kenburns</code> is a numeric value, it will be used as the animation duration.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>slices</code>
+                                    </td>
+                                    <td>15</td>
+                                    <td>Defines the number of slices, if a "Slice" transition is set.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Content-->
+    <div id="bottom-block">
+        <div class="uk-container uk-container-center">
+            <div class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">About Zeyn</h3>
+                        <p>Cras mattis consectetur purus sit amet fermentum curabitur blandit tempus Integer posuere erat a ante venenatis dapibus posuere velit aliquet.Petierunt uti sibi concilium totius Galliae in diem certam indicere morbi leo risus, porta ac consectetur ac, vestibulum at eros. </p>
+
+                        <ul id="social-42" class="social shape-# size-# align-left">
+                            <li> <a href="#" target="_blank"><i class="icon-facebook"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-twitter"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-gplus"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-linkedin"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-pinterest"></i></a> </li>
+                        </ul>
+                        <!--/ Social-->
+
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">CATEGORIES</h3>
+                        <ul class="categories-module">
+                            <li>
+                                <h4><a href="index_blogger.html">Audio & Video</a></h4> </li>
+                            <li>
+                                <h4><a href="index_creative.html">Creative</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_classic.html">Demography Interest</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_3_columns.html">Uncategorized</a></h4> </li>
+                            <li>
+                                <h4><a href="index_hotel_travel.html">Worldwide Travelling</a></h4> </li>
+                            <li>
+                                <h4><a href="index_wedding.html">Wedding</a></h4> </li>
+                            <li>
+                                <h4><a href="index_automotive.html">Human & Nature Photography</a></h4> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Recent Posts</h3>
+                        <ul class="uk-list uk-list-line">
+                            <li> <a href="post_blog_classic.html">Nocturnum haec quis sed</a>
+                                <br><small>Admin - Feb 20 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Memory behind </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Fabio ve iudice vincam</a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Nihilne te nocturnum
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Sed haec quis possit
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Gallery</h3>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src1.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src2.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src3.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src4.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src5.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src6.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src7.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src8.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src9.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                    </div>
+                    <!--/ LightBox Pictures-->
+
+                </div>
+            </div>
+            <footer class="tm-footer">
+                <div class="uk-panel parallax modulebox"> Made by love. Designed and developed by <a href="http://h2theme.pro" target="_blank">h2theme</a> Copyright &copy; 2015 . </div>
+            </footer>
+            <!--/ Footer CopyRight-->
+            <div id="offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <div class="uk-panel parallax modulebox"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn" class="center">
+                        <a onclick="jQuery.UIkit.offcanvas.hide();" style="color:white !important;" class="uk-close uk-close-alt close-canvas"></a>
+                    </div>
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-parent uk-active"> <a href="index.html">Home Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="index.html">Corporate</a> </li>
+                                <li> <a href="index_classic.html">Classic</a> </li>
+                                <li> <a href="index_creative.html">Creative</a> </li>
+                                <li> <a href="index_blogger.html">Blogger</a> </li>
+                                <li> <a href="index_medical.html">Medical</a> </li>
+                                <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                <li> <a href="index_hosting.html">Hosting</a> </li>
+                                <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Landing Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="landing_event.html">Event</a> </li>
+                                <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                <li><a href="landing_launch.html">Launch</a> </li>
+                                <li><a href="landing_onepage.html">One Page</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li class="uk-parent"> <a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                        <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                        <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Our Team</a>
+                                    <ul>
+                                        <li><a href="our_team_one.html">Our Team One</a> </li>
+                                        <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                        <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> Contact Us</a>
+                                    <ul>
+                                        <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                        <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                        <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> About Us</a>
+                                    <ul>
+                                        <li><a href="about_us_one.html">About Us One</a> </li>
+                                        <li><a href="about_us_two.html">About Us Two</a> </li>
+                                        <li><a href="about_us_three.html">About Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services_page_one.html">Services Page One</a> </li>
+                                        <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                        <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Widgets</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+                                <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+                                <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                <li class="uk-active"><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Full Features</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                </li>
+                                <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Off Canvas Mobile Menu-->
+        </div>
+        <!--/ Container-->
+    </div>
+</body>
+
+</html>

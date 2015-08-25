@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeyn | Zeyn Resturant Home</title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="src/css/fontello.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/styles/restaurant/custom.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.min.css" media="screen" />
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;ver=4.0.1'></script>
+    <script src="src/js/components/parallax.js"></script>
+    <script src="src/js/components/lightbox.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="src/js/components/slideshow.js"></script>
+    <script src="src/js/components/slideshow-fx.js"></script>
+
+    <!-- Google Map script -->
+
+    <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(43.630763, -79.496475);
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 14,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById('sp_simple_map_canvas'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <!-- Rev Slider script -->
+    <script type="text/javascript">
+        var setREVStartSize = function() {
+            var tpopt = new Object();
+            tpopt.startwidth = 1170;
+            tpopt.startheight = 500;
+            tpopt.container = jQuery('#rev_slider_21_1');
+            tpopt.fullScreen = "on";
+            tpopt.forceFullWidth = "on";
+            tpopt.container.closest(".rev_slider_wrapper").css({
+                height: tpopt.container.height()
+            });
+            tpopt.width = parseInt(tpopt.container.width(), 0);
+            tpopt.height = parseInt(tpopt.container.height(), 0);
+            tpopt.bw = tpopt.width / tpopt.startwidth;
+            tpopt.bh = tpopt.height / tpopt.startheight;
+            if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw;
+            if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh;
+            if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw;
+            if (tpopt.bh > 1) {
+                tpopt.bw = 1;
+                tpopt.bh = 1
+            }
+            if (tpopt.bw > 1) {
+                tpopt.bw = 1;
+                tpopt.bh = 1
+            }
+            tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth));
+            if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight;
+            if (tpopt.fullScreen == "on") {
+                tpopt.height = tpopt.bw * tpopt.startheight;
+                var cow = tpopt.container.parent().width();
+                var coh = jQuery(window).height();
+                if (tpopt.fullScreenOffsetContainer != undefined) {
+                    try {
+                        var offcontainers = tpopt.fullScreenOffsetContainer.split(",");
+                        jQuery.each(offcontainers, function(e, t) {
+                            coh = coh - jQuery(t).outerHeight(true);
+                            if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight
+                        })
+                    } catch (e) {}
+                }
+                tpopt.container.parent().height(coh);
+                tpopt.container.height(coh);
+                tpopt.container.closest(".rev_slider_wrapper").height(coh);
+                tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);
+                tpopt.container.css({
+                    height: "100%"
+                });
+                tpopt.height = coh;
+            } else {
+                tpopt.container.height(tpopt.height);
+                tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);
+                tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);
+            }
+        };
+        /* CALL PLACEHOLDER */
+        setREVStartSize();
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi21;
+        tpj(document).ready(function() {
+            if (tpj('#rev_slider_21_1').revolution == undefined) {
+                revslider_showDoubleJqueryError('#rev_slider_21_1');
+            } else {
+                revapi21 = tpj('#rev_slider_21_1').show().revolution({
+                    dottedOverlay: "none",
+                    delay: 6000,
+                    startwidth: 1170,
+                    startheight: 500,
+                    hideThumbs: 200,
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 1,
+                    simplifyAll: "off",
+                    navigationType: "none",
+                    navigationArrows: "none",
+                    navigationStyle: "round",
+                    touchenabled: "on",
+                    onHoverStop: "off",
+                    nextSlideOnWindowFocus: "off",
+                    swipe_threshold: 0.7,
+                    swipe_min_touches: 1,
+                    drag_block_vertical: false,
+                    keyboardNavigation: "off",
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 20,
+                    soloArrowLeftVOffset: 0,
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 20,
+                    soloArrowRightVOffset: 0,
+                    shadow: 0,
+                    fullWidth: "off",
+                    fullScreen: "on",
+                    spinner: "off",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    forceFullWidth: "on",
+                    fullScreenAlignForce: "off",
+                    minFullScreenHeight: "",
+                    hideTimerBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    isJoomla: true
+                });
+            }
+        }); /*ready*/
+    </script>
+</head>
+
+<body>
+
+    <div id="header-block" class="wide-header">
+        <!-- Container -->
+        <div class="uk-container uk-container-center">
+            <a class="tm-logo" href="index.html"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn"> </a>
+            <!--/Logo-->
+            <nav class="tm-navbar uk-navbar">
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-parent uk-active" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="index.html">Corporate</a> </li>
+                                        <li> <a href="index_classic.html">Classic</a> </li>
+                                        <li> <a href="index_creative.html">Creative</a> </li>
+                                        <li> <a href="index_blogger.html">Blogger</a> </li>
+                                        <li> <a href="index_medical.html">Medical</a> </li>
+                                        <li class="uk-active"> <a href="index_restaurant.html">Restaurant</a> </li>
+                                        <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                        <li> <a href="index_hosting.html">Hosting</a> </li>
+                                        <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                        <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                        <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Landing Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="landing_event.html">Event</a> </li>
+                                        <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                        <li><a href="landing_launch.html">Launch</a> </li>
+                                        <li><a href="landing_onepage.html">One Page</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-5" style="min-width: 1125px; max-width: 1125px; width:225px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Blog
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                                <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                                <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Our Team
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="our_team_one.html">Our Team One</a> </li>
+                                                <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                                <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Contact Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                                <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                                <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">About Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="about_us_one.html">About Us One</a> </li>
+                                                <li><a href="about_us_two.html">About Us Two</a> </li>
+                                                <li><a href="about_us_three.html">About Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Services
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="services_page_one.html">Services Page One</a> </li>
+                                                <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                                <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Widgets</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3 uk-dropdown-center" style="min-width: 700px; max-width: 700px; width:470px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                        <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                        <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                        <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                        <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                        <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                        <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                        <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                        <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                        <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                        <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                        <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                        <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+</ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                        <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                        <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                        <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                        <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                        <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                        <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                        <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                        <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                        <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                        <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                        <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                        <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                        <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                        <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                        <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                        <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                        <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                        <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                        <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                        <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                        <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                        <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                        <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                        <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Full Features</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                        <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                        <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                        <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                        <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                        </li>
+                                        <li> <a href="font_fontello.html"><i class="uk-icon-cube"></i>Fontello Icons</a>
+                                        </li>
+                                        <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <!--/ Menu Items With Dropdown-->
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <!--/Off Canvas Mobile Menu-->
+                    <div class="uk-navbar-flip">
+                        <div class="uk-navbar-content uk-hidden-small">
+                            <a href="#searchbar" class="search-toggle"><i class="uk-icon icon-search-6"></i></a>
+                            <div class="search-bar search-hidden">
+                                <form class="searchbar search-40 uk-search" method="post" role="search">
+                                    <input class="uk-search-field form-control" type="search" name="searchword" placeholder="search...">
+                                    <input type="hidden" name="Itemid" value="254"> <a class="search-close"><i class="uk-icon-close"></i></a>
+                                </form>
+                                <!--/Search Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+                        <a class="tm-logo-small" href="index.html"> <img src="images/zeyn_logo.png" width="135" height="40" alt="Zeyn" class="uk-responsive-height"> </a>
+                        <!--/ Mobile Mini Logo -->
+                    </div>
+            </nav>
+
+            <!--/Menu-->
+        </div>
+    </div>
+    <!--/Header-->
+
+    <div id="slider-block">
+        <div class="tm-slider uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="  parallax modulebox">
+                    <!-- START REVOLUTION SLIDER 4.6.5 b2 fullscreen mode -->
+
+                    <div id="rev_slider_21_1_wrapper" class="rev_slider_wrapper fullscreen-container" style="background-color:#ffffff;padding:0px;">
+                        <div id="rev_slider_21_1" class="rev_slider fullscreenbanner" style="display:none;">
+                            <ul>
+                                <!-- SLIDE  1-->
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1900" data-saveperformance="off">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="images/restoBG.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption sft fadeout" data-x="center" data-hoffset="-9" data-y="center" data-voffset="-196" data-speed="1100" data-start="2000" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/1z.jpg" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption sft fadeout" data-x="center" data-hoffset="-6" data-y="center" data-voffset="-122" data-speed="1100" data-start="2050" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/2z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="-3" data-y="center" data-voffset="-70" data-speed="1100" data-start="2100" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/3z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="-2" data-y="center" data-voffset="-5" data-speed="1100" data-start="2150" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 8;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/4z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 5 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="1" data-y="center" data-voffset="58" data-speed="1100" data-start="2200" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 9;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/5z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 6 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="4" data-y="center" data-voffset="111" data-speed="1100" data-start="2250" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 10;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/6z.jpg" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 7 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="1" data-y="center" data-voffset="148" data-speed="1100" data-start="2300" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 11;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/7z.png" alt="">
+                                    </div>
+                                </li>
+                                <!-- SLIDE  2-->
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1900" data-saveperformance="off">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="images/restoBG.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption sft fadeout" data-x="center" data-hoffset="-9" data-y="center" data-voffset="-196" data-speed="1100" data-start="2000" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/1z.jpg" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption sft fadeout" data-x="center" data-hoffset="-6" data-y="center" data-voffset="-122" data-speed="1100" data-start="2050" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/2z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="-3" data-y="center" data-voffset="-70" data-speed="1100" data-start="2100" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/3z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="-2" data-y="center" data-voffset="-5" data-speed="1100" data-start="2150" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 8;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/4z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 5 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="1" data-y="center" data-voffset="58" data-speed="1100" data-start="2200" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 9;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/5z.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 6 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="4" data-y="center" data-voffset="111" data-speed="1100" data-start="2250" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 10;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/6z.jpg" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 7 -->
+                                    <div class="tp-caption sft" data-x="center" data-hoffset="1" data-y="center" data-voffset="148" data-speed="1100" data-start="2300" data-easing="Back.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 11;"><img src="images/uniterevolution/zeyn_resto/images/uploads/revslider/zeyn_resto/7z.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tp-bannertimer tp-bottom" style="display:none; visibility: hidden !important;"></div>
+                        </div>
+
+                    </div>
+                    <!-- END REVOLUTION SLIDER -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/Slider-->
+
+    <div id="main-block">
+
+        <div class="tm-top-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center parallax modulebox">
+                    <h2 class="center space-top title-resto " style="margin-bottom: 30px;">Menu Of The Month</h2>
+
+                    <div class="uk-grid">
+
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:300}">
+
+                            <img src="images/food4.jpg" alt="Martabak Asin" />
+
+                            <div class="foodmenu_module">
+                                <h4>Martabak Asin</h4>
+                                <p>$32</p>
+                                <p></p>
+                                <p>Beef / Bread / Onion</p>
+                                <p>Recommended</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:400}">
+
+                            <img src="images/food2.jpg" alt="Spicy Chiken Adobo" />
+
+                            <div class="foodmenu_module">
+                                <h4>Spicy Chiken Adobo</h4>
+                                <p>$39</p>
+                                <p></p>
+                                <p>Chicken / Hot / Bawang</p>
+                                <p>New</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:500}">
+
+                            <img src="images/food1.jpg" alt="Caesar Salad Jumbo" />
+
+                            <div class="foodmenu_module">
+                                <h4>Caesar Salad Jumbo</h4>
+                                <p>$40</p>
+                                <p></p>
+                                <p>Oyster / Tomato / Mayonaise</p>
+                                <p>Recommended</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="uk-grid">
+
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:300}">
+
+                            <img src="images/food3.jpg" alt="Sego Pecel Tumpang" />
+
+                            <div class="foodmenu_module">
+                                <h4>Sego Pecel Tumpang</h4>
+                                <p>$9</p>
+                                <p></p>
+                                <p>Rice / Tofu / Peanut</p>
+                                <p>Orginal</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:400}">
+
+                            <img src="images/food5.jpg" alt="Sambel Pizza" />
+
+                            <div class="foodmenu_module">
+                                <h4>Sambel Pizza</h4>
+                                <p>$19</p>
+                                <p></p>
+                                <p>Chilli / Fruits / Onion</p>
+                                <p>Nyus</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:500}">
+
+                            <img src="images/food6.jpg" alt="Ayam Mbok Berek" />
+
+                            <div class="foodmenu_module">
+                                <h4>Ayam Mbok Berek</h4>
+                                <p>$29</p>
+                                <p></p>
+                                <p>Fitik / Kremes / Maknyos</p>
+                                <p>Hot</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-top-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box  light-orange-bg space-top parallax modulebox">
+                    <div class="light-orange-bg p">
+                        <div class=" uk-container uk-container-center ">
+                            <h2 class="center title-resto ">About Zeyn Resto</h2>
+                            <div class="uk-grid space-top" data-uk-scrollspy="{cls:'uk-animation-scale-up',delay:450}">
+                                <div class="uk-width-1-2">
+
+                                    <h2 class="light">Who We Are</h2>
+                                    <p>A communi observantia non est recedendum. Qui ipsorum lingua Celtae, nostra Galli appellantur. Tityre, tu patulae recubans sub tegmine fagi dolor. Qui ipsorum lingua Celtae, nostra Galli appellantur. Quo usque tandem abutere, Catilina, patientia nostra Gallia est omnis divisa in partes tres, quarum.</p>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation. Pellentesque habitant morbi tristique senectus et netus. Curabitur blandit tempus ardua ridiculus .</p>
+                                    <a class="uk-button uk-button-primary uk-button-normal" href="#">READ MORE</a>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-2">
+                                            <h2 class="light">Our Vision</h2>
+                                            <p>A communi observantia non est recedendum. Qui ipsorum lingua Celtae, nostra Galli appellantur. Tityre, tu patulae recubans sub tegmine fagi dolor. Qui ipsorum lingua Celtae, nostra Galli. Ambitioni dedisse scripsisse iudicaretur. Phasellus laoreet lorem vel dolor tempus vehicula.
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-1-2">
+                                            <h2 class="light">Operating Hours</h2>
+                                            <div class="orange-box">
+                                                <p><strong>MONDAY </strong><span style="float: right;">7 AM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>TUESDAY</strong> <span style="float: right;">7 AM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>WEDNESDAY</strong> <span style="float: right;">7 AM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>THURSDAY</strong> <span style="float: right;">7 AM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>FRIDAY</strong><span style="float: right;">1 PM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>SATURDAY</strong> <span style="float: right;">6 AM &#8211; 12 PM</span>
+                                                </p>
+                                                <p><strong>SUNDAY</strong> <span style="float: right;">CLOSED</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="split-right" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+                            <img width="170" height="800" src="images/spoon.png" class=" vc_box_border_grey attachment-full" alt="spoon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top parallax modulebox">
+                    <h1 class="center title-resto space-bottom"> Favorites Menu</h1>
+
+                    <a data-uk-lightbox="{group:'portfolio1'}" data-uk-scrollspy="{cls:'uk-animation-fade',delay:300}" href="images/ff1.jpg" title="Lorem ipsum dolo">
+                        <figure class="uk-overlay uk-overlay-hover uk-width-1-4 spotimg">
+                            <img src="images/ff1.jpg" alt="Food 1" class="uk-overlay-scale" />
+                            <div class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background uk-overlay-bottom">
+                                <p class="uk-text-right uk-text-large">Food</p>
+                                <h4 class="h3_img uk-text-right">Lorem ipsum dolo</h4>
+                            </div>
+                        </figure>
+                    </a>
+                    <a data-uk-lightbox="{group:'portfolio1'}" data-uk-scrollspy="{cls:'uk-animation-fade',delay:600}" href="images/ff2.jpg" title="Lorem ipsum dolo">
+                        <figure class="uk-overlay uk-overlay-hover uk-width-1-4 spotimg">
+                            <img src="images/ff1.jpg" alt="Food 1" class="uk-overlay-scale" />
+                            <div class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background uk-overlay-bottom">
+                                <p class="uk-text-right uk-text-large">Food</p>
+                                <h4 class="h3_img uk-text-right">Lorem ipsum dolo</h4>
+                            </div>
+                        </figure>
+                    </a>
+                    <a data-uk-lightbox="{group:'portfolio1'}" data-uk-scrollspy="{cls:'uk-animation-fade',delay:900}" href="images/ff3.jpg" title="Lorem ipsum dolo">
+                        <figure class="uk-overlay uk-overlay-hover uk-width-1-4 spotimg">
+                            <img src="images/ff1.jpg" alt="Food 1" class="uk-overlay-scale" />
+                            <div class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background uk-overlay-bottom">
+                                <p class="uk-text-right uk-text-large">Food</p>
+                                <h4 class="h3_img uk-text-right">Lorem ipsum dolo</h4>
+                            </div>
+                        </figure>
+                    </a>
+                    <a data-uk-lightbox="{group:'portfolio1'}" data-uk-scrollspy="{cls:'uk-animation-fade',delay:1200}" href="images/ff4.jpg" title="Lorem ipsum dolo">
+                        <figure class="uk-overlay uk-overlay-hover uk-width-1-4 spotimg">
+                            <img src="images/ff1.jpg" alt="Food 1" class="uk-overlay-scale" />
+                            <div class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background uk-overlay-bottom">
+                                <p class="uk-text-right uk-text-large">Food</p>
+                                <h4 class="h3_img uk-text-right">Lorem ipsum dolo</h4>
+                            </div>
+                        </figure>
+                    </a>
+
+                    <div class="uk-grid">
+                        <div class="uk-width-1-2">
+
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:300}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Baked Camembert</h4>
+                                    <p>$39</p>
+                                    <p></p>
+                                    <p>Potatoes / Rosemary / Butter</p>
+                                    <p>Vegetarian</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:400}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Moules Marinières</h4>
+                                    <p>$20</p>
+                                    <p></p>
+                                    <p>Chilli / Oyster / Sweets</p>
+                                    <p>New</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:500}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Boudin Noir Aux Pommes</h4>
+                                    <p>$54</p>
+                                    <p></p>
+                                    <p>Rice / Tomato / Sauce</p>
+                                    <p>Hot</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-left' , delay:600}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Roasted Red Potatoes with Rosemary</h4>
+                                    <p>$55</p>
+                                    <p></p>
+                                    <p>Potatoes / Rosemary / Butter</p>
+                                    <p>Healthy</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-2">
+
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:300}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Roasted Red Potatoes with Rosemary</h4>
+                                    <p>$19</p>
+                                    <p></p>
+                                    <p>Potatoes / Rosemary / Butter</p>
+                                    <p>Healthy</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:400}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Moules Marinières</h4>
+                                    <p>$39</p>
+                                    <p></p>
+                                    <p>Buncis / Mayonaise / Paprika</p>
+                                    <p>Orginal</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:500}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Magret de Canard</h4>
+                                    <p>$15</p>
+                                    <p></p>
+                                    <p>Potatoes / Tofu / Beef</p>
+                                    <p>Maknyos</p>
+                                </div>
+
+                            </div>
+                            <div data-uk-scrollspy="{cls:'uk-animation-slide-right' , delay:600}">
+
+                                <div class="foodmenu2_module">
+                                    <h4>Steak Tartare</h4>
+                                    <p>$21</p>
+                                    <p></p>
+                                    <p>Beef / Chicken / Butter / Chilli</p>
+                                    <p>Yummi</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box  light-orange-bg space-top padding-bottom-high parallax modulebox">
+                    <h2 class="center title-resto space-bottom">Customer Reviews</h2>
+                    <div class="uk-container uk-container-center uk-width-2-3 center">
+
+                        <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
+                            <ul class="uk-slideshow space-top-bottom-low">
+                                <li>
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-4">
+                                            <img src="images/res1.jpg" class="img_round" alt="Girl">
+                                        </div>
+                                        <div class="uk-width-3-4 rest-tes">
+                                            <p>” Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Inmensae subtilitatis, obscuris et malesuada fames.”</p>
+                                            <p>— Michele</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-4">
+                                            <img src="images/res2.jpg" class="img_round" alt="Girl 3 ">
+                                        </div>
+                                        <div class="uk-width-3-4 rest-tes">
+                                            <p>”Top Dah Pokokna! Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                                            <p>— Thompson</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                                <li data-uk-slideshow-item="0"><a href="#">Item 1</a>
+                                </li>
+                                <li data-uk-slideshow-item="1"><a href="#">Item 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-panel uk-panel-box  space-top parallax modulebox">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid" data-uk-scrollspy="{cls:'wpb_right-to-left', delay:300}">
+                            <div class="uk-width-1-2">
+                                <img src="images/foo1.jpg" class="center" alt="Food">
+                            </div>
+                            <div class="uk-width-1-2">
+                                <h3 class="light">Black Pepper Beef</h3>
+                                <p class="p">Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-right-top" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:600}">
+                        <img width="224" height="402" src="images/food_c2.png" alt="food_c2" />
+                    </div>
+                    <div class="uk-container uk-container-center">
+                        <hr style="margin-top:30px;  margin-right: 50px;margin-left: 50px;">
+                    </div>
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid space-top" data-uk-scrollspy="{cls:'wpb_left-to-right', delay:200}">
+                            <div class="uk-width-1-2">
+                                <h3 class="light">Fried Rice</h3>
+                                <p class="p">Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <img src="images/foo2.jpg" class="center" alt="Food 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-panel uk-panel-box  space-top parallax modulebox">
+                    <div class="uk-grid p">
+                        <div class="uk-width-1-2 light-orange-bg">
+                            <div class="uk-container uk-container-center">
+                                <h2 class="title-resto" style="  font-size: 35px;" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">Words From The Chef</h2>
+                                <div class="uk-width-4-5 center space-top">
+                                    <p style="  text-align: left;" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:400}">Nec dubitamus multa iter quae et nos invenerat. Excepteur sint obcaecat cupiditat non proident culpa. Quam diu etiam furor iste tuus nos eludet Cum ceteris in veneratione tui montes, nascetur mus. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Hi omnes lingua, institutis, legibus inter se differunt.</p>
+
+                                    <p style="  text-align: left;" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500}">Ut enim ad minim veniam, quis nostrud exercitation. Unam incolunt Belgae, aliam Aquitani, tertiam. Ab illo tempore, ab est sed immemorabili. Quid securi etiam tamquam eu fugiat nulla pariatur. Idque Caesaris facere voluntate liceret: sese habere.
+                                        <img src="images/aut1.png" alt="Res" style="  float: right;margin-top: 60px;  padding-bottom: 50px;
+" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2 resbg">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-panel uk-panel-box  parares parallax modulebox" data-uk-parallax="{bg: '-200'}" style="background-image: url('images/chef.jpg')">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-width-1-3 uk-float-right white" data-uk-scrollspy="{cls:'uk-animation-fade', delay:400}">
+                            <blockquote>
+                                <p>Cooking is not difficult. Everyone has taste, even if they don’t realize it. Even if you’re not a great chef, there’s nothing to stop you understanding the difference between what tastes good and what doesn’t.</p>
+                            </blockquote>
+                            <h3 style="color:white;" class="light">— Chef Gerard Depardieu</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top parallax modulebox">
+                    <h2 class="title-resto space-bottom">Make a Reservation</h2>
+                    <div class="uk-grid p  space-top ">
+                        <div class="uk-width-1-2 ">
+
+                            <div class="uk-grid">
+                                <div class="uk-width-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                                    <img src="images/food15.jpg" alt="food" class="center">
+                                </div>
+                                <div class="uk-width-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:400}">
+                                    <h3 class="light" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500}">Cozy Place</h3>
+                                    <p data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:600}">Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Nec dubitamus multa iter quae et nos invenerat.</p>
+                                </div>
+                            </div>
+                            <hr style="margin-top:30px;">
+                            <div class="uk-grid  space-top ">
+                                <div class="uk-width-1-2">
+                                    <h3 class="light" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:700}">Free Welcome Drink</h3>
+                                    <p data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:800}">Nec dubitamus multa iter quae et nos invenerat. Unam incolunt Belgae, aliam Aquitani, tertiam. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Nec dubitamus multa iter quae et nos invenerat.</p>
+                                </div>
+                                <div class="uk-width-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:900}">
+                                    <img src="images/food16.jpg" alt="food 2" class="center">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-2 contact_medical make_res" data-uk-scrollspy="{cls:'uk-animation-scale-down', delay:300}">
+                            <div id="sp_quickcontact155" class="sp_quickcontact">
+                                <div id="sp_qc_status1"></div>
+                                <form id="sp-quickcontact-form1">
+                                    <div class="sp_qc_clr"></div>
+                                    <input type="text" name="name" id="name1" onfocus="if (this.value=='Name') this.value='';" onblur="if (this.value=='') this.value='Name';" value="Name" required />
+                                    <div class="sp_qc_clr"></div>
+                                    <input type="text" name="email" id="email1" onblur="if (this.value=='') this.value='Email';" value="Email" onfocus="if (this.value=='Email') this.value='';" required />
+                                    <div class="sp_qc_clr"></div>
+                                    <input type="text" name="subject" id="subject1" onfocus="if (this.value=='Phone') this.value='';" onblur="if (this.value=='') this.value='Phone';" value="Phone" />
+                                    <div class="sp_qc_clr"></div>
+                                    <textarea name="message" id="message1" onfocus="if (this.value=='Message') this.value='';" onblur="if (this.value=='') this.value='Message';">Message</textarea>
+                                    <div class="sp_qc_clr"></div>
+                                    <div class="sp_qc_clr"></div>
+                                    <input id="sp_qc_submit1" class="button uk-button" type="submit" value="Send" />
+                                    <div class="sp_qc_clr"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="  space-top parallax modulebox">
+                    <div id="sp_simple_map303">
+                        <div id="sp_simple_map_canvas" style="height:300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Content-->
+    <div id="bottom-block">
+        <div class="uk-container uk-container-center">
+            <div class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">About Zeyn</h3>
+                        <p>Cras mattis consectetur purus sit amet fermentum curabitur blandit tempus Integer posuere erat a ante venenatis dapibus posuere velit aliquet.Petierunt uti sibi concilium totius Galliae in diem certam indicere morbi leo risus, porta ac consectetur ac, vestibulum at eros. </p>
+
+                        <ul id="social-42" class="social shape-# size-# align-left">
+                            <li> <a href="#" target="_blank"><i class="icon-facebook"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-twitter"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-gplus"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-linkedin"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="icon-pinterest"></i></a> </li>
+                        </ul>
+                        <!--/ Social-->
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">CATEGORIES</h3>
+                        <ul class="categories-module">
+                            <li>
+                                <h4><a href="index_blogger.html">Audio & Video</a></h4> </li>
+                            <li>
+                                <h4><a href="index_creative.html">Creative</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_classic.html">Demography Interest</a></h4> </li>
+                            <li>
+                                <h4><a href="pages_blog_3_columns.html">Uncategorized</a></h4> </li>
+                            <li>
+                                <h4><a href="index_hotel_travel.html">Worldwide Travelling</a></h4> </li>
+                            <li>
+                                <h4><a href="index_wedding.html">Wedding</a></h4> </li>
+                            <li>
+                                <h4><a href="index_automotive.html">Human & Nature Photography</a></h4> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Recent Posts</h3>
+                        <ul class="uk-list uk-list-line">
+                            <li> <a href="post_blog_classic.html">Nocturnum haec quis sed</a>
+                                <br><small>Admin - Feb 20 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Memory behind </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Fabio ve iudice vincam</a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_grid.html">Nihilne te nocturnum
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                            <li> <a href="post_blog_classic.html">Sed haec quis possit
+                          </a>
+                                <br><small>Admin - Feb 19 , 2015</small> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="parallax modulebox">
+                        <h3 class="uk-panel-title thin-border thin-center">Gallery</h3>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src1.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src2.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src3.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src4.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src5.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src6.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src7.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src8.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                        <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                            <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src9.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                            </figure>
+                        </a>
+                    </div>
+                    <!--/ LightBox Pictures-->
+
+                </div>
+            </div>
+            <footer class="tm-footer">
+                <div class="uk-panel parallax modulebox"> Made by love. Designed and developed by <a href="http://h2theme.pro" target="_blank">h2theme</a> Copyright &copy; 2015 . </div>
+            </footer>
+            <!--/ Footer CopyRight-->
+            <div id="offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <div class="uk-panel parallax modulebox"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn" class="center">
+                        <a onclick="jQuery.UIkit.offcanvas.hide();" style="color:white !important;" class="uk-close uk-close-alt close-canvas"></a>
+                    </div>
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-parent uk-active"> <a href="index.html">Home Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="index.html">Corporate</a> </li>
+                                <li> <a href="index_classic.html">Classic</a> </li>
+                                <li> <a href="index_creative.html">Creative</a> </li>
+                                <li> <a href="index_blogger.html">Blogger</a> </li>
+                                <li> <a href="index_medical.html">Medical</a> </li>
+                                <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                <li> <a href="index_hosting.html">Hosting</a> </li>
+                                <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Landing Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="landing_event.html">Event</a> </li>
+                                <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                <li><a href="landing_launch.html">Launch</a> </li>
+                                <li><a href="landing_onepage.html">One Page</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li class="uk-parent"> <a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                        <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                        <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Our Team</a>
+                                    <ul>
+                                        <li><a href="our_team_one.html">Our Team One</a> </li>
+                                        <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                        <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> Contact Us</a>
+                                    <ul>
+                                        <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                        <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                        <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> About Us</a>
+                                    <ul>
+                                        <li><a href="about_us_one.html">About Us One</a> </li>
+                                        <li><a href="about_us_two.html">About Us Two</a> </li>
+                                        <li><a href="about_us_three.html">About Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services_page_one.html">Services Page One</a> </li>
+                                        <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                        <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Widgets</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+                                <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+                                <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                <li class="uk-active"><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Full Features</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                </li>
+                                <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Off Canvas Mobile Menu-->
+        </div>
+        <!--/ Container-->
+    </div>
+</body>
+
+</html>

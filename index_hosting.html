@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeyn | Zeyn Hosting Home</title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="src/css/fontello.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/styles/hosting/custom.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.min.css" media="screen" />
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;ver=4.0.1'></script>
+    <script src="src/js/components/lightbox.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="src/js/components/slideshow.js"></script>
+    <script src="src/js/components/slideshow-fx.js"></script>
+
+    <!-- Google Map script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            try {
+                var map, center = new google.maps.LatLng(-7.2852292, 112.6809869),
+                    style = [{
+                        "featureType": "water",
+                        "stylers": [{
+                            "color": "#021019"
+                        }]
+                    }, {
+                        "featureType": "landscape",
+                        "stylers": [{
+                            "color": "#08304b"
+                        }]
+                    }, {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#0c4152"
+                        }, {
+                            "lightness": 5
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b434f"
+                        }, {
+                            "lightness": 25
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b3d51"
+                        }, {
+                            "lightness": 16
+                        }]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    }, {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#000000"
+                        }, {
+                            "lightness": 13
+                        }]
+                    }, {
+                        "featureType": "transit",
+                        "stylers": [{
+                            "color": "#146474"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#144b53"
+                        }, {
+                            "lightness": 14
+                        }, {
+                            "weight": 1.4
+                        }]
+                    }],
+                    mapOptions = {
+                        center: center,
+                        mapTypeControl: false,
+                        zoom: 14,
+                        scrollwheel: false,
+                        styles: style
+                    };
+                var iconMarker = {
+                    url: 'images/map_marker.png'
+                };
+                map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: center,
+                    map: map,
+                    icon: iconMarker
+                });
+            } catch ($err) {}
+        });
+    </script>
+
+    <!-- Rev Slider script -->
+    <script type="text/javascript">
+        var setREVStartSize = function() {
+            var tpopt = new Object();
+            tpopt.startwidth = 1170;
+            tpopt.startheight = 800;
+            tpopt.container = jQuery('#rev_slider_10_1');
+            tpopt.fullScreen = "off";
+            tpopt.forceFullWidth = "on";
+            tpopt.container.closest(".rev_slider_wrapper").css({
+                height: tpopt.container.height()
+            });
+            tpopt.width = parseInt(tpopt.container.width(), 0);
+            tpopt.height = parseInt(tpopt.container.height(), 0);
+            tpopt.bw = tpopt.width / tpopt.startwidth;
+            tpopt.bh = tpopt.height / tpopt.startheight;
+            if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw;
+            if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh;
+            if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw;
+            if (tpopt.bh > 1) {
+                tpopt.bw = 1;
+                tpopt.bh = 1
+            }
+            if (tpopt.bw > 1) {
+                tpopt.bw = 1;
+                tpopt.bh = 1
+            }
+            tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth));
+            if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight;
+            if (tpopt.fullScreen == "on") {
+                tpopt.height = tpopt.bw * tpopt.startheight;
+                var cow = tpopt.container.parent().width();
+                var coh = jQuery(window).height();
+                if (tpopt.fullScreenOffsetContainer != undefined) {
+                    try {
+                        var offcontainers = tpopt.fullScreenOffsetContainer.split(",");
+                        jQuery.each(offcontainers, function(e, t) {
+                            coh = coh - jQuery(t).outerHeight(true);
+                            if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight
+                        })
+                    } catch (e) {}
+                }
+                tpopt.container.parent().height(coh);
+                tpopt.container.height(coh);
+                tpopt.container.closest(".rev_slider_wrapper").height(coh);
+                tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);
+                tpopt.container.css({
+                    height: "100%"
+                });
+                tpopt.height = coh;
+            } else {
+                tpopt.container.height(tpopt.height);
+                tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);
+                tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);
+            }
+        };
+        /* CALL PLACEHOLDER */
+        setREVStartSize();
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi10;
+        tpj(document).ready(function() {
+            if (tpj('#rev_slider_10_1').revolution == undefined) {
+                revslider_showDoubleJqueryError('#rev_slider_10_1');
+            } else {
+                revapi10 = tpj('#rev_slider_10_1').show().revolution({
+                    dottedOverlay: "none",
+                    delay: 5000,
+                    startwidth: 1170,
+                    startheight: 800,
+                    hideThumbs: 200,
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 2,
+                    simplifyAll: "off",
+                    navigationType: "none",
+                    navigationArrows: "solo",
+                    navigationStyle: "round",
+                    touchenabled: "on",
+                    onHoverStop: "off",
+                    nextSlideOnWindowFocus: "off",
+                    swipe_threshold: 0.7,
+                    swipe_min_touches: 1,
+                    drag_block_vertical: false,
+                    keyboardNavigation: "off",
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 20,
+                    soloArrowLeftVOffset: 0,
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 20,
+                    soloArrowRightVOffset: 0,
+                    shadow: 0,
+                    fullWidth: "on",
+                    fullScreen: "off",
+                    spinner: "off",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    forceFullWidth: "on",
+                    hideTimerBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    isJoomla: true
+                });
+            }
+        }); /*ready*/
+    </script>
+
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+jQuery(document).ready(function($){
+
+    jQuery(window).scroll(function () { 
+            var SN = $(window).scrollTop();
+            
+            if (SN > 300) { 
+                if (jQuery('#header-block').addClass('fixed animation uk-animation-slide-top')) {
+                    return false;
+                } 
+            } 
+            else { 
+                jQuery('#header-block').removeClass('fixed animation uk-animation-slide-top').stop().attr( { style : '' } );
+            }
+        } );
+});
+</script>
+
+</head>
+
+<body class="tm-isblog ">
+
+    <div id="header-block" class="center-mode wide-header">
+
+        <!-- Container -->
+        <div class="uk-container uk-container-center">
+            <a class="tm-logo" href="index.html"> <img src="images/zeyn_hosting.png" width="190" alt="Zeyn Hosting"> </a>
+            <!--/Logo-->
+            <nav class="tm-navbar uk-navbar">
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-parent uk-active" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="index.html">Corporate</a> </li>
+                                        <li> <a href="index_classic.html">Classic</a> </li>
+                                        <li> <a href="index_creative.html">Creative</a> </li>
+                                        <li> <a href="index_blogger.html">Blogger</a> </li>
+                                        <li> <a href="index_medical.html">Medical</a> </li>
+                                        <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                        <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                        <li class="uk-active"> <a href="index_hosting.html">Hosting</a> </li>
+                                        <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                        <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                        <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Landing Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="landing_event.html">Event</a> </li>
+                                        <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                        <li><a href="landing_launch.html">Launch</a> </li>
+                                        <li><a href="landing_onepage.html">One Page</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-5" style="min-width: 1125px; max-width: 1125px; width:225px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Blog
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                                <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                                <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Our Team
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="our_team_one.html">Our Team One</a> </li>
+                                                <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                                <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Contact Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                                <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                                <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">About Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="about_us_one.html">About Us One</a> </li>
+                                                <li><a href="about_us_two.html">About Us Two</a> </li>
+                                                <li><a href="about_us_three.html">About Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Services
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="services_page_one.html">Services Page One</a> </li>
+                                                <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                                <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Widgets</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3 uk-dropdown-center" style="min-width: 700px; max-width: 700px; width:470px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                        <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                        <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                        <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                        <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                        <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                        <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                        <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                        <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                        <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                        <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                        <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                        <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+</ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+
+                                        <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                        <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                        <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                        <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                        <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                        <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                        <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                        <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                        <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                        <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                        <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                        <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                        <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                        <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                        <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                        <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                        <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                        <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                        <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                        <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                        <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                        <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                        <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                        <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                        <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Full Features</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                        <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                        <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                        <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                        <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a></li>
+<li> <a href="font_fontello.html"><i class="uk-icon-cube"></i>Fontello Icons</a></li>
+                                        <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <!--/ Menu Items With Dropdown-->
+                    <ul class="uk-navbar-nav uk-hidden-small">
+                        <li class="uk-parent" data-uk-dropdown> <a href="#">Contact</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <div class="uk-grid menu_module">
+                                    <div class="uk-width-1-2">
+                                        <h4 class="bold" style="color:white;">Say Hello To Us</h4>
+                                        <p class="p" style="color:white;">Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                                        <div id="sp_quickcontact246" class="sp_quickcontact">
+                                            <div id="sp_qc_status"></div>
+                                            <form id="sp-quickcontact-form">
+                                                <div class="sp_qc_clr"></div>
+                                                <div class="uk-grid contact_forms">
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <span class="your-name">
+                                                <input type="text" name="name" class="name-input"
+                                                id="name"
+                                                onfocus="if (this.value=='Name') this.value='';"
+                                                onblur="if (this.value=='') this.value='Name';"
+                                                value="Name"
+                                                required
+                                                />
+                                                </span>
+                                                        <span class="your-email">
+                                                    <input type="text" name="email" id="email"
+                                                    class="email-input"
+                                                    onblur="if (this.value=='') this.value='Email';"
+                                                    value="Email"
+                                                    onfocus="if (this.value=='Email') this.value='';"
+                                                    required
+                                                    /></span>
+                                                        <span class="your-subject">
+                                                        <input type="text" name="subject" class="subject-input"
+                                                        id="subject"
+                                                        onfocus="if (this.value=='Phone') this.value='';"
+                                                        onblur="if (this.value=='') this.value='Phone';"
+                                                        value="Phone"
+                                                        /></span>
+                                                    </div>
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <textarea name="message" id="message" class="message-input" onfocus="if (this.value=='Message') this.value='';" onblur="if (this.value=='') this.value='Message';">Message</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="sp_qc_clr"></div>
+                                                <input id="sp_qc_submit" class="button uk-button uk-button-primary uk-float-right" style="padding: 0 18px;  text-transform: uppercase;" type="submit" value="Send" />
+                                                <div class="sp_qc_clr"></div>
+                                            </form>
+                                        </div>
+                                        <!--/Contact Form-->
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <div id="map1" class="google-map" style="height:322px;width:100%"></div>
+                                        <!--/Google Map-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <!--/Off Canvas Mobile Menu-->
+                    <div class="uk-navbar-flip">
+                        <div class="uk-navbar-content uk-hidden-small">
+                            <a href="#searchbar" class="search-toggle"><i class="uk-icon icon-search-6"></i></a>
+                            <div class="search-bar search-hidden">
+                                <form class="searchbar search-40 uk-search" method="post" role="search">
+                                    <input class="uk-search-field form-control" type="search" name="searchword" placeholder="search...">
+                                    <input type="hidden" name="Itemid" value="254"> <a class="search-close"><i class="uk-icon-close"></i></a>
+                                </form>
+                                <!--/Search Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+                        <a class="tm-logo-small" href="index.html"> <img src="images/zeyn_logo.png" width="135" height="40" alt="Zeyn" class="uk-responsive-height"> </a>
+                        <!--/ Mobile Mini Logo -->
+                    </div>
+            </nav>
+
+            <!--/Menu-->
+        </div>
+
+    </div>
+
+        <!--/Header-->
+
+    <div id="slider-block">
+        <div class="tm-slider uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="  parallax modulebox">
+                    <!-- START REVOLUTION SLIDER 4.6.8 fullwidth mode -->
+
+                    <div id="rev_slider_10_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;max-height:800px;">
+                        <div id="rev_slider_10_1" class="rev_slider fullwidthabanner" style="display:none;max-height:800px;height:800px;">
+                            <ul>
+                                <!-- SLIDE  1-->
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="900" data-saveperformance="off">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="images/hosting2_bg.jpg" alt="hosting2_bg" data-bgposition="right top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption sfr fadeout" data-x="right" data-hoffset="63" data-y="bottom" data-voffset="1" data-speed="500" data-start="1700" data-easing="easeInOutBack" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 5;"><img src="images/man_present.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption sft fadeout" data-x="right" data-hoffset="-470" data-y="bottom" data-voffset="-373" data-speed="700" data-start="2100" data-easing="easeInOutBack" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 6;"><img src="images/uniterevolution/hosting3/images/uploads/revslider/hosting3/hosting2_box.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption hosting1_text1 sfl fadeout tp-resizeme" data-x="25" data-y="center" data-voffset="-61" data-speed="700" data-start="2300" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">
+                                        <div>Cloud Servers</div>
+                                    </div>
+
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption hosting1_border1 sfl fadeout tp-resizeme" data-x="35" data-y="center" data-voffset="-7" data-speed="700" data-start="2500" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+                                    </div>
+
+                                    <!-- LAYER NR. 5 -->
+                                    <div class="tp-caption hosting1_text2 sfl fadeout tp-resizeme" data-x="29" data-y="center" data-voffset="37" data-speed="700" data-start="2700" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                                        <div>With Our Cloud Servers you have full root/administrator control of
+                                            <br />your cloud server and can run any operating system you like.</div>
+                                    </div>
+
+                                    <!-- LAYER NR. 6 -->
+                                    <div class="tp-caption customin fadeout" data-x="right" data-hoffset="-500" data-y="bottom" data-voffset="-9" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="3300" data-easing="easeInOutBack" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 10;"><img src="images/uniterevolution/hosting3/images/uploads/revslider/hosting3/hosting2_price.png" alt="">
+                                    </div>
+                                </li>
+                                <!-- SLIDE  2-->
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="900" data-saveperformance="off">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="images/hosting1_bg.jpg" alt="hosting1_bg" data-bgposition="right top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <!-- LAYERS -->
+
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption sfb fadeout" data-x="-56" data-y="bottom" data-voffset="11" data-speed="600" data-start="1700" data-easing="easeInOutBack" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 5;"><img src="images/hosting1_smartphone.png" alt="">
+                                    </div>
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption hosting1_text1 sfr fadeout tp-resizeme" data-x="right" data-hoffset="-10" data-y="center" data-voffset="-60" data-speed="500" data-start="2100" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+                                        <div>Mobile App Hosting</div>
+                                    </div>
+
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption hosting1_border1 sfr fadeout tp-resizeme" data-x="right" data-hoffset="-10" data-y="center" data-voffset="0" data-speed="500" data-start="2300" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">
+                                    </div>
+
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption hosting1_text2 sfr fadeout tp-resizeme" data-x="right" data-hoffset="-10" data-y="center" data-voffset="40" data-speed="500" data-start="2500" data-easing="easeInOutBack" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="900" style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+                                        <div>Host your mobile applications in the cloud with our cloud package</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tp-bannertimer tp-bottom" style="display:none; visibility: hidden !important;"></div>
+                        </div>
+                    </div>
+                    <!-- END REVOLUTION SLIDER -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--/ Slider-->
+
+    <div id="main-block">
+
+        <div class="tm-top-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box  parallax modulebox">
+                    <div class="color_bg1 center domain">
+                        <div class="uk-container uk-container-center">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-2">
+                                    <h3 style="font-size: 17px;margin-top: 10px;">Enter your email to get our latest listed property</h3>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <input class="form-control domain-search" type="text" placeholder="Enter your email here" style="  margin-bottom: -1px !Important; margin-right: -4px;">
+                                    <button class="uk-button uk-button-primary uk-button-normal" style="margin-top: -6px;" type="button">SUBMIT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-panel-box  parallax modulebox">
+                        <div class="color_bg center domain">
+                            <h3>Find The Right Domain For Your Business</h3>
+                            <input class="form-control domain-search" type="text" placeholder="Enter Domain Here" style="  margin-bottom: -1px !Important; margin-right: -4px;">
+                            <button class="uk-button uk-button-primary uk-button-normal" style="margin-top: -5px;" type="button">SEARCH</button>
+                            <p style="color: #515151;font-weight: 300;  font-style: italic;">Limited time offer on .com, .net and .org domain names</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                </div>
+
+
+        <div class="tm-top-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top-bottom parallax modulebox">
+                    <h3 class="thin-border thin-left">Powerful Servers</h3>
+                    <div class="uk-grid" style="margin-top:50px;">
+                        <div class="uk-width-1-2">
+
+                            <div class="iconboxes effect7" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
+                                <i class="icon-download-cloud"></i>
+                                <div class="text-box">
+                                    <h4>Cloud Servers</h4>
+                                    <p>Curabitur blandit tempus ardua ridiculus sed magna. Quam temere in vitiis, legem sancimus haerentia. Tu quoque, Brute, fili mi, nihil timor populi, nihil!</p>
+                                </div>
+                            </div>
+
+                            <div class="iconboxes effect7" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
+                                <i class="icon-flash-1"></i>
+                                <div class="text-box">
+                                    <h4>Reliable Speed</h4>
+                                    <p>Fabio vel iudice vincam, sunt in culpa qui officia. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Ab illo tempore, ab est sed immemorabili.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="iconboxes effect7" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
+                                <i class="icon-share"></i>
+                                <div class="text-box">
+                                    <h4>Load Distribution</h4>
+                                    <p>Plura mihi bona sunt, inclinet, amari petere vellent. Idque Caesaris facere voluntate liceret: sese habere. Qui ipsorum lingua Celtae, nostra Galli appellantur.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                            <img src="images/hosting1.png" class="img_round" alt="Hosting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-top-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class=" uk-container uk-container-center space-top-bottom parallax modulebox">
+                    <h3 class="thin-border thin-center center">Why Choose Us</h3>
+                    <div class="uk-grid" style="margin-top:50px;">
+                        <div class="uk-width-1-3 align-right">
+
+                            <div class="timeline" style="margin-left:50px;;">
+                                <div class="liner">
+
+                                    <div class="time-item right    no-margin-left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
+                                        <div class="center-line circle">
+                                            <i class="icon-flattr-1"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>Uptime Respond</h2>
+                                            <div class="content-text">
+                                                <p>hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="time-item right  no-margin-left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:600}">
+                                        <div class="center-line circle">
+                                            <i class="icon-chart-bar-3"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>No Delay</h2>
+                                            <div class="content-text">
+                                                <p>hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="time-item right no-margin-left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:900}">
+                                        <div class="center-line circle">
+                                            <i class="icon-cog-1"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>Quality Control Server</h2>
+                                            <div class="content-text">hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3 center" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:300}">
+                            <img src="images/hosting2.png" style="margin-right: initial;" class="space-res" alt="Hosting 2">
+                        </div>
+                        <div class="uk-width-1-3 align-left">
+
+                            <div class="timeline" style="margin-right:50px;">
+                                <div class="liner">
+
+                                    <div class="time-item left no-margin-right " data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                                        <div class="center-line circle">
+                                            <i class="icon-compass-4"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>Easy Customize</h2>
+                                            <div class="content-text">
+                                                <p>hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="time-item left no-margin-right " data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:600}">
+                                        <div class="center-line circle">
+                                            <i class="icon-cloud-flash"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>Fast Respond</h2>
+                                            <div class="content-text">
+                                                <p>hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="time-item left no-margin-right " data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:900}">
+                                        <div class="center-line circle">
+                                            <i class="icon-laptop-2"></i>
+                                        </div>
+                                        <div class="content-line">
+                                            <h2>Realibility Server</h2>
+                                            <div class="content-text">
+                                                <p>hasellus vulputate ultricies lacus in lacinia. Lorem ipsum dolor sit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="space-top-bottom parallax modulebox">
+                    <div style="padding-top: 40px;padding-bottom: 40px;background-color: #1abc9c;">
+
+                        <div class="uk-container uk-container-center">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-2-3">
+                                    <h3 style="color:white;">Everything You Want In One HTML Theme : ZEYN</h3>
+                                    <p style="color:white;" class="p">A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus. Ambitioni dedisse scripsisse iudicaretur.
+                                    </p>
+                                </div>
+
+                                <div class="uk-width-1-3">
+                                    <p style="text-align:center;margin-top:15px;">
+                                        <a href="http://themeforest.net/user/h2theme" class="uk-button skin-light">PURCHASE ZEYN</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top-bottom parallax modulebox">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-3 center">
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                                <img src="images/hosting4.png" alt="Hosting4">
+                                <h3 style="color: #2eb5ac;">Powerful Operating System</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                                <img src="images/hosting5.png" alt="Hosting5">
+                                <h3 style="color: #2eb5ac;">RAID 10 Storage</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-3 center">
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-fade', delay:400}">
+                                <img src="images/hosting6.png" alt="Hosting 6">
+                                <h3 style="color: #2eb5ac;">Server Monitoring System</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-fade', delay:400}">
+                                <img src="images/hosting7.png" alt="Hosting 7">
+                                <h3 style="color: #2eb5ac;">Powerful Resources</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="uk-width-1-3 center">
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500}">
+                                <img src="images/hosting8.png" alt="Hosting 8">
+                                <h3 style="color: #2eb5ac;">Virus Protection</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                            <div class="text_column" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500}">
+                                <img src="images/hosting9.png" alt="Hosting 9">
+                                <h3 style="color: #2eb5ac;">Secure Data Centers</h3>
+                                <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top-bottom border-top parallax modulebox">
+                    <h3 class="thin-border thin-center center">Choose Hosting Line And Start Today</h3>
+                    <p style="text-align:center;margin-top:60px;">Our hosting packages match these needs giving you the reliable platform of your own private server, hassle free set-up and a great low price. XenServer based hosting in a whole offers a better hosting platform.</p>
+                    <div style="margin-top:70px;">
+
+                            <div class="uk-grid pricing-table">
+
+                                <div class="uk-width-1-4 " data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                                    <ul class="plan list-unstyled">
+
+                                        <li class="hover-tip">
+                                            <p class="hover-tip-text">Basic</p>
+                                        </li>
+
+                                        <li class="plan-head">
+                                            <div class="plan-price"><span>$</span>15<span class="after-price"></span>
+                                            </div>
+                                            <div class="plan-title"><span>monthly</span>
+                                            </div>
+                                        </li>
+
+                                        <li>10GB Space amount
+                                            <br />
+                                        </li>
+
+                                        <li>Unlimited users
+                                            <br />
+                                        </li>
+
+                                        <li>30GB Bandwidth
+                                            <br />
+                                        </li>
+
+                                        <li>Enhanced Security
+                                            <br />
+                                        </li>
+
+                                        <li>20 MySQL Databases
+                                            <br />
+                                        </li>
+
+                                        <li class="plan-action">
+                                            <a href="#" class="uk-button primary_color_button uk-button-normal ">BUY NOW</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-1-4 " data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                                    <ul class="plan list-unstyled">
+
+                                        <li class="hover-tip">
+                                            <p class="hover-tip-text">Standard</p>
+                                        </li>
+
+                                        <li class="plan-head">
+                                            <div class="plan-price"><span>$</span>20<span class="after-price"></span>
+                                            </div>
+                                            <div class="plan-title"><span>montly</span>
+                                            </div>
+                                        </li>
+
+                                        <li>20GB Space amount
+                                            <br />
+                                        </li>
+
+                                        <li>Unlimited users
+                                            <br />
+                                        </li>
+
+                                        <li>50GB Bandwidth
+                                            <br />
+                                        </li>
+
+                                        <li>Enhanced Security
+                                            <br />
+                                        </li>
+
+                                        <li>40 MySQL Databases
+                                            <br />
+                                        </li>
+
+                                        <li class="plan-action">
+                                            <a href="#" class="uk-button primary_color_button uk-button-normal ">BUY NOW</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-1-4  featured" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                                    <ul class="plan list-unstyled">
+
+                                        <li class="hover-tip">
+                                            <p class="hover-tip-text">Business</p>
+                                        </li>
+
+                                        <li class="plan-head">
+                                            <div class="plan-price"><span>$</span>25<span class="after-price"></span>
+                                            </div>
+                                            <div class="plan-title"><span>montly</span>
+                                            </div>
+                                        </li>
+
+                                        <li>50GB Space amount
+                                            <br />
+                                        </li>
+
+                                        <li>Unlimited users
+                                            <br />
+                                        </li>
+
+                                        <li>30GB Bandwidth
+                                            <br />
+                                        </li>
+
+                                        <li>Enhanced Security
+                                            <br />
+                                        </li>
+
+                                        <li>50 MySQL Databases
+                                            <br />
+                                        </li>
+
+                                        <li class="plan-action">
+                                            <a href="#" class="uk-button primary_color_button uk-button-normal  skin-light">BUY NOW</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-1-4 " data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                                    <ul class="plan list-unstyled">
+
+                                        <li class="hover-tip">
+                                            <p class="hover-tip-text">Professional</p>
+                                        </li>
+
+                                        <li class="plan-head">
+                                            <div class="plan-price"><span>$</span>40<span class="after-price"></span>
+                                            </div>
+                                            <div class="plan-title"><span>montly</span>
+                                            </div>
+                                        </li>
+
+                                        <li>100GB Space amount
+                                            <br />
+                                        </li>
+
+                                        <li>Unlimited users
+                                            <br />
+                                        </li>
+
+                                        <li>70GB Bandwidth
+                                            <br />
+                                        </li>
+
+                                        <li>Enhanced Security
+                                            <br />
+                                        </li>
+
+                                        <li>100 MySQL Databases
+                                            <br />
+                                        </li>
+
+                                        <li class="plan-action">
+                                            <a href="#" class="uk-button primary_color_button uk-button-normal ">BUY NOW</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="uk-panel uk-panel-box uk-container uk-container-center space-top-bottom parallax modulebox">
+                    <h3 class="thin-border thin-center center"> Our Clients</h3>
+
+                        <div class="uk-grid">
+
+                            <div class="uk-width-1-4 border-right border-bottom" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
+
+                                <img src="images/hos1.png" alt="1" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right border-bottom" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+
+                                <img src="images/hos2.png" alt="2" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right border-bottom" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+
+                                <img src="images/hos1.png" alt="3" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right border-bottom" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
+
+                                <img src="images/hos4.png" alt="4" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="uk-grid">
+
+                            <div class="uk-width-1-4 border-right" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1500}">
+
+                                <img src="images/hos5.png" alt="5" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1800}">
+
+                                <img src="images/hos6.png" alt="6" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right" data-uk-scrollspy="{cls:'uk-animation-fade', delay:2100}">
+
+                                <img src="images/hos7.png" alt="7" />
+
+                            </div>
+                            <div class="uk-width-1-4 border-right" data-uk-scrollspy="{cls:'uk-animation-fade', delay:2400}">
+
+                                <img src="images/hos8.png" alt="8" />
+
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+ <div class="uk-panel uk-panel-box parallax modulebox parallaxpadding" data-uk-parallax="{bg: '-150'}" style="background-image: url('images/tes1.jpg')">
+                    <div class="uk-container uk-container-center">
+
+                        <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
+                            <ul class="uk-slideshow space-top-bottom-low">
+                                <li>
+                                    <p class="center"><img src="images/cl1.jpg" alt="Client 1" class="img_round center">
+                                    </p>
+                                    <p class="center" style="color:white;">Quam diu etiam furor iste tuus nos eludet Unam incolunt Belgae, aliam Aquitani, tertiam. — Mark Ken</p>
+                                </li>
+                                <li>
+
+                                    <p class="center"><img src="images/cl2.jpg" alt="Client 2" class="img_round center">
+                                    </p>
+                                    <p class="center" style="color:white;">Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Fabio vel iudice vincam— John Doe</p>
+                                </li>
+
+                            </ul>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                                <li data-uk-slideshow-item="0"><a href="#">Item 1</a>
+                                </li>
+                                <li data-uk-slideshow-item="1"><a href="#">Item 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+                </div>
+
+        <!--/ Main Content-->
+
+        <div id="bottom-block">
+            <div class="uk-container uk-container-center">
+                <div class="tm-bottom-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+                    <div class="uk-width-1-4">
+                        <div class="parallax modulebox">
+                            <h3 class="uk-panel-title thin-border thin-center">About Zeyn</h3>
+                            <p>Cras mattis consectetur purus sit amet fermentum curabitur blandit tempus Integer posuere erat a ante venenatis dapibus posuere velit aliquet.Petierunt uti sibi concilium totius Galliae in diem certam indicere morbi leo risus, porta ac consectetur ac, vestibulum at eros. </p>
+
+                            <ul id="social-42" class="social shape-# size-# align-left">
+                                <li> <a href="#" target="_blank"><i class="icon-facebook"></i></a> </li>
+                                <li> <a href="#" target="_blank"><i class="icon-twitter"></i></a> </li>
+                                <li> <a href="#" target="_blank"><i class="icon-gplus"></i></a> </li>
+                                <li> <a href="#" target="_blank"><i class="icon-linkedin"></i></a> </li>
+                                <li> <a href="#" target="_blank"><i class="icon-pinterest"></i></a> </li>
+                            </ul>
+                            <!--/ Social-->
+
+                        </div>
+                    </div>
+                    <div class="uk-width-1-4">
+                        <div class="parallax modulebox">
+                            <h3 class="uk-panel-title thin-border thin-center">CATEGORIES</h3>
+                            <ul class="categories-module">
+                                <li>
+                                    <h4><a href="index_blogger.html">Audio & Video</a></h4> </li>
+                                <li>
+                                    <h4><a href="index_creative.html">Creative</a></h4> </li>
+                                <li>
+                                    <h4><a href="pages_blog_classic.html">Demography Interest</a></h4> </li>
+                                <li>
+                                    <h4><a href="pages_blog_3_columns.html">Uncategorized</a></h4> </li>
+                                <li>
+                                    <h4><a href="index_hotel_travel.html">Worldwide Travelling</a></h4> </li>
+                                <li>
+                                    <h4><a href="index_wedding.html">Wedding</a></h4> </li>
+                                <li>
+                                    <h4><a href="index_automotive.html">Human & Nature Photography</a></h4> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-4">
+                        <div class="parallax modulebox">
+                            <h3 class="uk-panel-title thin-border thin-center">Recent Posts</h3>
+                            <ul class="uk-list uk-list-line">
+                                <li> <a href="post_blog_classic.html">Nocturnum haec quis sed</a>
+                                    <br><small>Admin - Feb 20 , 2015</small> </li>
+                                <li> <a href="post_blog_grid.html">Memory behind </a>
+                                    <br><small>Admin - Feb 19 , 2015</small> </li>
+                                <li> <a href="post_blog_classic.html">Fabio ve iudice vincam</a>
+                                    <br><small>Admin - Feb 19 , 2015</small> </li>
+                                <li> <a href="post_blog_grid.html">Nihilne te nocturnum
+                          </a>
+                                    <br><small>Admin - Feb 19 , 2015</small> </li>
+                                <li> <a href="post_blog_classic.html">Sed haec quis possit
+                          </a>
+                                    <br><small>Admin - Feb 19 , 2015</small> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-4">
+                        <div class="parallax modulebox">
+                            <h3 class="uk-panel-title thin-border thin-center">Gallery</h3>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src1.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src2.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src3.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src4.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src5.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port2.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src6.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port3.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src7.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port4.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src8.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                            <a data-uk-lightbox="{group:'portfolio1'}" href="images/port1.jpg" title="Lorem ipsum dolo">
+                                <figure class="uk-overlay uk-overlay-hover spotimg"> <img src="images/src9.jpg" alt="Portfolio 1" class="uk-overlay-scale" width="85" height="85" />
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-icon uk-overlay-background"> </div>
+                                </figure>
+                            </a>
+                        </div>
+                        <!--/ LightBox Pictures-->
+
+                    </div>
+                </div>
+                <footer class="tm-footer">
+                    <div class="uk-panel parallax modulebox"> Made by love. Designed and developed by <a href="http://h2theme.pro" target="_blank">h2theme</a> Copyright &copy; 2015 . </div>
+                </footer>
+                <!--/ Footer CopyRight-->
+                <div id="offcanvas" class="uk-offcanvas">
+                    <div class="uk-offcanvas-bar">
+                        <div class="uk-panel parallax modulebox"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn" class="center">
+                            <a onclick="jQuery.UIkit.offcanvas.hide();" style="color:white !important;" class="uk-close uk-close-alt close-canvas"></a>
+                        </div>
+                        <ul class="uk-nav uk-nav-offcanvas">
+                            <li class="uk-parent uk-active"> <a href="index.html">Home Pages</a>
+                                <ul class="uk-nav-sub">
+                                    <li> <a href="index.html">Corporate</a> </li>
+                                    <li> <a href="index_classic.html">Classic</a> </li>
+                                    <li> <a href="index_creative.html">Creative</a> </li>
+                                    <li> <a href="index_blogger.html">Blogger</a> </li>
+                                    <li> <a href="index_medical.html">Medical</a> </li>
+                                    <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                    <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                    <li> <a href="index_hosting.html">Hosting</a> </li>
+                                    <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                    <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                    <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent"><a href="#">Landing Pages</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="landing_event.html">Event</a> </li>
+                                    <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                    <li><a href="landing_launch.html">Launch</a> </li>
+                                    <li><a href="landing_onepage.html">One Page</a> </li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent"><a href="#">Pages</a>
+                                <ul class="uk-nav-sub">
+                                    <li class="uk-parent"> <a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                            <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                            <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent"> <a href="#">Our Team</a>
+                                        <ul>
+                                            <li><a href="our_team_one.html">Our Team One</a> </li>
+                                            <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                            <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent"> <a href="#"> Contact Us</a>
+                                        <ul>
+                                            <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                            <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                            <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent"> <a href="#"> About Us</a>
+                                        <ul>
+                                            <li><a href="about_us_one.html">About Us One</a> </li>
+                                            <li><a href="about_us_two.html">About Us Two</a> </li>
+                                            <li><a href="about_us_three.html">About Us Three</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent"> <a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="services_page_one.html">Services Page One</a> </li>
+                                            <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                            <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent"><a href="#">Widgets</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                    <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                    <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                    <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                    <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                    <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                    <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                    <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                    <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                    <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                    <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                    <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                    <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+                                    <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                    <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                    <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                    <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                    <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                    <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                    <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                    <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                    <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                    <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                    <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                    <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                    <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+                                    <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                    <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                    <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                    <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                    <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                    <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                    <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                    <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                    <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                    <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                    <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                    <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                    <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                </ul>
+                            </li>
+                            <li class="uk-parent"><a href="#">Full Features</a>
+                                <ul class="uk-nav-sub">
+                                    <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                    <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                    <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                    <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                    <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a></li>
+                                    <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/ Off Canvas Mobile Menu-->
+            </div>
+            <!--/ Container-->
+        </div>
+        <!--/ Bottom Block-->
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* ========================================================================
+   Custom CSS
+ ========================================================================== */
+/*
+ */
+
+.uk-button-primary {
+    border-radius: 5px !Important;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    border-radius: 5px!important;
+    font-size: 1.4em;
+    height: 72px;
+    min-height: 72px;
+    padding: 23px 33px;
+    line-height: 27px;
+}

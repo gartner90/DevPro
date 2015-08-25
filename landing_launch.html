@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeyn | Zeyn Landing Launch</title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="src/css/fontello.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/styles/launch/custom.css">
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;ver=4.0.1'></script>
+    <script src="src/js/components/parallax.js"></script>
+    <script src="src/js/components/lightbox.js"></script>
+    <script src="src/js/countdown.js"></script>
+    <script src="src/js/components/slideshow.js"></script>
+    <script src="src/js/components/slideshow-fx.js"></script>
+
+    <!-- Google Map script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            try {
+                var map, center = new google.maps.LatLng(-7.2852292, 112.6809869),
+                    style = [{
+                        "featureType": "water",
+                        "stylers": [{
+                            "color": "#021019"
+                        }]
+                    }, {
+                        "featureType": "landscape",
+                        "stylers": [{
+                            "color": "#08304b"
+                        }]
+                    }, {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#0c4152"
+                        }, {
+                            "lightness": 5
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b434f"
+                        }, {
+                            "lightness": 25
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#0b3d51"
+                        }, {
+                            "lightness": 16
+                        }]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    }, {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#000000"
+                        }, {
+                            "lightness": 13
+                        }]
+                    }, {
+                        "featureType": "transit",
+                        "stylers": [{
+                            "color": "#146474"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#144b53"
+                        }, {
+                            "lightness": 14
+                        }, {
+                            "weight": 1.4
+                        }]
+                    }],
+                    mapOptions = {
+                        center: center,
+                        mapTypeControl: false,
+                        zoom: 14,
+                        scrollwheel: false,
+                        styles: style
+                    };
+                var iconMarker = {
+                    url: 'images/map_marker.png'
+                };
+                map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: center,
+                    map: map,
+                    icon: iconMarker
+                });
+            } catch ($err) {}
+        });
+    </script>
+
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+        <![endif]-->
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#clock').countdown('2017/1/1', function(event) {
+                var $this = $(this).html(event.strftime('' + '<span>%w</span> ' + '<span>%d</span> ' + '<span>%H</span> ' + '<span>%M</span>  ' + '<span>%S</span> '));
+            });
+        });
+    </script>
+</head>
+
+<body class="tm-isblog ">
+
+    <div id="header-block" class="wide-header">
+        <!-- Container -->
+        <div class="uk-container uk-container-center">
+            <a class="tm-logo" href="index.html"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn"> </a>
+            <!--/Logo-->
+            <nav class="tm-navbar uk-navbar">
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-parent uk-active" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="index.html">Corporate</a> </li>
+                                        <li> <a href="index_classic.html">Classic</a> </li>
+                                        <li> <a href="index_creative.html">Creative</a> </li>
+                                        <li> <a href="index_blogger.html">Blogger</a> </li>
+                                        <li> <a href="index_medical.html">Medical</a> </li>
+                                        <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                        <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                        <li> <a href="index_hosting.html">Hosting</a> </li>
+                                        <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                        <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                        <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Landing Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="landing_event.html">Event</a> </li>
+                                        <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                        <li class="uk-active"><a href="landing_launch.html">Launch</a> </li>
+                                        <li><a href="landing_onepage.html">One Page</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-5" style="min-width: 1125px; max-width: 1125px; width:225px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Blog
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                                <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                                <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Our Team
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="our_team_one.html">Our Team One</a> </li>
+                                                <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                                <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Contact Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                                <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                                <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">About Us
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="about_us_one.html">About Us One</a> </li>
+                                                <li><a href="about_us_two.html">About Us Two</a> </li>
+                                                <li><a href="about_us_three.html">About Us Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-5">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li class="uk-parent uk-nav-header">Services
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="services_page_one.html">Services Page One</a> </li>
+                                                <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                                <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Widgets</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3 uk-dropdown-center" style="min-width: 700px; max-width: 700px; width:470px;">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                        <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                        <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                        <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                        <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                        <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                        <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                        <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                        <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                        <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                        <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                        <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                        <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+</ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+
+                                        <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                        <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                        <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                        <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                        <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                        <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                        <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                        <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                        <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                        <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                        <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                        <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                        <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                        <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                        <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                        <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                        <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                        <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                        <li><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                        <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                        <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                        <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                        <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                        <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                        <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="{}" aria-haspopup="true" aria-expanded="false"><a href="#">Full Features</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                        <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                        <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                        <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                        <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                        </li>
+                                        <li> <a href="font_fontello.html"><i class="uk-icon-cube"></i>Fontello Icons</a>
+                                        </li>
+                                        <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <!--/ Menu Items With Dropdown-->
+                    <ul class="uk-navbar-nav uk-hidden-small">
+                        <li class="uk-parent" data-uk-dropdown> <a href="#">Contact</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <div class="uk-grid menu_module">
+                                    <div class="uk-width-1-2">
+                                        <h4 class="bold" style="color:white;">Say Hello To Us</h4>
+                                        <p class="p" style="color:white;">Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                                        <div id="sp_quickcontact246" class="sp_quickcontact">
+                                            <div id="sp_qc_status"></div>
+                                            <form id="sp-quickcontact-form">
+                                                <div class="sp_qc_clr"></div>
+                                                <div class="uk-grid contact_forms">
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <span class="your-name">
+                                                <input type="text" name="name" class="name-input"
+                                                id="name"
+                                                onfocus="if (this.value=='Name') this.value='';"
+                                                onblur="if (this.value=='') this.value='Name';"
+                                                value="Name"
+                                                required
+                                                />
+                                                </span>
+                                                        <span class="your-email">
+                                                    <input type="text" name="email" id="email"
+                                                    class="email-input"
+                                                    onblur="if (this.value=='') this.value='Email';"
+                                                    value="Email"
+                                                    onfocus="if (this.value=='Email') this.value='';"
+                                                    required
+                                                    /></span>
+                                                        <span class="your-subject">
+                                                        <input type="text" name="subject" class="subject-input"
+                                                        id="subject"
+                                                        onfocus="if (this.value=='Phone') this.value='';"
+                                                        onblur="if (this.value=='') this.value='Phone';"
+                                                        value="Phone"
+                                                        /></span>
+                                                    </div>
+                                                    <div class="uk-width-1-2" style="padding-right: 30px;">
+                                                        <textarea name="message" id="message" class="message-input" onfocus="if (this.value=='Message') this.value='';" onblur="if (this.value=='') this.value='Message';">Message</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="sp_qc_clr"></div>
+                                                <input id="sp_qc_submit" class="button uk-button uk-button-primary uk-float-right" style="padding: 0 18px;  text-transform: uppercase;" type="submit" value="Send" />
+                                                <div class="sp_qc_clr"></div>
+                                            </form>
+                                        </div>
+                                        <!--/Contact Form-->
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <div id="map1" class="google-map" style="height:322px;width:100%"></div>
+                                        <!--/Google Map-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <!--/Off Canvas Mobile Menu-->
+                    <div class="uk-navbar-flip">
+                        <div class="uk-navbar-content uk-hidden-small">
+                            <a href="#searchbar" class="search-toggle"><i class="uk-icon icon-search-6"></i></a>
+                            <div class="search-bar search-hidden">
+                                <form class="searchbar search-40 uk-search" method="post" role="search">
+                                    <input class="uk-search-field form-control" type="search" name="searchword" placeholder="search...">
+                                    <input type="hidden" name="Itemid" value="254"> <a class="search-close"><i class="uk-icon-close"></i></a>
+                                </form>
+                                <!--/Search Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-content uk-navbar-center uk-visible-small">
+                        <a class="tm-logo-small" href="index.html"> <img src="images/zeyn_logo.png" width="135" height="40" alt="Zeyn" class="uk-responsive-height"> </a>
+                        <!--/ Mobile Mini Logo -->
+                    </div>
+            </nav>
+
+            <!--/Menu-->
+        </div>
+    </div>
+    <!--/Header-->
+
+    <div id="slider-block">
+        <div class="tm-slider uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="  redbg parallax modulebox" style="background-image: url('images/redbg.jpg')">
+                    <div class="uk-container uk-container-center center">
+                        <h2 class="bold border-top-bottom white center" style="  color: #ffffff;font-size: 72px;border-color: #ffffff;">REVOLUTIONARY<br> DIGITAL MEDIA
+</h2>
+                        <p class="center p space-bottom" style="  margin-top: -50px;padding-bottom: 10px;color: white;">Launch in</p>
+                        <!-- Count Down Short Code -->
+
+                        <div id="clock"></div>
+                        <!-- End Down Short Code -->
+
+                        <p class="center p" style="margin-top:70px;color: white;">Submit your name and email to get features sneak peek and priority discount
+                        </p>
+                        <div class="launch-form uk-width-2-3 center">
+                            <input class="form-control launch-forms" type="text" placeholder="Your Name" style="  margin-bottom: -1px !Important; margin-right: -4px;">
+                            <input class="form-control launch-forms" type="text" placeholder="Your Email" style="  margin-bottom: -1px !Important; margin-right: -4px;">
+                            <button class="uk-button uk-button-primary uk-button-normal p" type="button">SEARCH</button>
+                        </div>
+                        <p class="p white" style="color: white;font-size:10px;margin-top:10px;">We will never share your information with any 3rd parties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/Slider-->
+
+    <div id="main-block">
+
+        <div class="tm-top-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box  dark_bg parallax modulebox">
+                    <div class="uk-container uk-container-center center">
+
+                        <!-- Icon Boxes Short Code -->
+
+                        <div class="uk-grid">
+
+                            <div class="uk-width-1-4 iconboxes effect6" data-uk-scrollspy="{cls:'uk-animation-fade',delay:300}">
+
+                                <i class="icon-download-outline"></i>
+
+                                <h4>VIRTUAL UPADATES</h4>
+
+                            </div>
+
+                            <div class="uk-width-1-4 iconboxes effect6" data-uk-scrollspy="{cls:'uk-animation-fade',delay:300}">
+
+                                <i class="icon-chat-alt"></i>
+
+                                <h4>COMMUNICATION</h4>
+
+                            </div>
+
+                            <div class="uk-width-1-4 iconboxes effect6" data-uk-scrollspy="{cls:'uk-animation-fade',delay:300}">
+
+                                <i class="icon-location-outline"></i>
+
+                                <h4>GEO LOCATION</h4>
+
+                            </div>
+
+                            <div class="uk-width-1-4 iconboxes effect6" data-uk-scrollspy="{cls:'uk-animation-fade',delay:300}">
+
+                                <i class="icon-folder-2"></i>
+
+                                <h4>FREE SPACE</h4>
+
+                            </div>
+
+                        </div>
+
+                        <!-- End Icon Boxes Short Code -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-top-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class=" uk-container uk-container-center space-top-bottom-high parallax modulebox">
+
+                    <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
+                        <ul class="uk-slideshow space-top-bottom-low">
+                            <li>
+                                <h3 class="bold border-top-bottom bold">Core Features</h3>
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-2">
+                                        <h3 class="bold" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">Awesome Theme</h3>
+                                        <p class="p" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:400}">Quo usque tandem abutere, Catilina, patientia nostra? Ullamco laboris nisi ut aliquid ex ea commodi consequat. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Cum sociis natoque penatibus et magnis dis parturient. Petierunt uti sibi concilium totius Galliae in diem certam indicere.</p>
+                                        <p class="p" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500}">Salutantibus vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. A communi observantia non est recedendum. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+                                        <a data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:600}" href="#" class="uk-button uk-button-primary uk-button-normal" style="padding: 11px 20px !important;margin-right:8px;">LEARN MORE</a>
+                                        <a data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:700}" href="#" class="uk-button skin-dark uk-button-normal">PURCHASE NOW</a>
+
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <img src="images/imac-ipad-iphone.png" alt="Imac" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+
+                                <h3 class="bold border-top-bottom bold">Core Features</h3>
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-2">
+                                        <h3 class="bold">Elegant Design</h3>
+                                        <p class="p">Quo usque tandem abutere, Catilina, patientia nostra? Ullamco laboris nisi ut aliquid ex ea commodi consequat. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Cum sociis natoque penatibus et magnis dis parturient. Petierunt uti sibi concilium totius Galliae in diem certam indicere.</p>
+                                        <p class="p">Salutantibus vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. A communi observantia non est recedendum. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+                                        <a href="#" class="uk-button uk-button-primary uk-button-normal" style="padding: 11px 20px !important;margin-right:8px;">LEARN MORE</a>
+                                        <a href="#" class="uk-button skin-dark uk-button-normal">PURCHASE NOW</a>
+
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <img src="images/mob.png" alt="Mob">
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                            <li data-uk-slideshow-item="0"><a href="#">Item 1</a>
+                            </li>
+                            <li data-uk-slideshow-item="1"><a href="#">Item 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="  parallax modulebox" style="background-image: url('images/bgblue.jpg')">
+                    <div class="uk-container uk-container-center white">
+                        <h3 class="border-top-bottom bold space-top white">OTHER BENEFITS</h3>
+                        <div class="center">
+
+                            <!-- Icon Boxes Short Code -->
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-left',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-upload-cloud-outline"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">CURABITUR EST GRAVIDA</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Quis aute iure reprehenderit in voluptate velit esse. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Paullum deliquit, ponderibus.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-left',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-chart-outline"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">QUAEVERO AUCTOREM</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Quis aute iure reprehenderit in voluptate velit esse. A communi observantia non est recedendum. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-left',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-calendar-outlilne"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">UMUNITISSIMUS</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Contra legem facit qui id facit quod lex prohibet. Nihil hic munitissimus habendi senatus locus, nihil horum? Plura mihi bona sunt, inclinet, amari petere vellent.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- End Icon Boxes Short Code -->
+
+                            <!-- Icon Boxes Short Code -->
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-right',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-attach-outline"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">MERCEDEM AUT</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Mercedem aut nummos unde unde extricat, amaras. Petierunt uti sibi concilium totius Galliae .
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-right',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-camera-outline"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">INTEGER LEGENTIBUS</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Cum ceteris in veneratione tui montes, nascetur mus. Integer legentibus erat a ante historiarum dapibus. Cras mattis iudicium purus sit amet fermentum.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-width-1-3 iconboxes-5 layout-5" data-uk-scrollspy="{cls:'uk-animation-slide-right',delay:300}">
+
+                                    <div class="dt-section-icon hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a ">
+                                        <i class="hi-icon icon-chart-pie-outline"></i>
+
+                                        <h4 style="font-size:16px !important;font-weight:400 !important;">CURABITUR EST GRAVIDA</h4>
+
+                                        <div class="iconboxes-text">
+                                            <p>Inmensae subtilitatis, obscuris et malesuada fames. Quae vero auctorem tractata ab fiducia dicuntur. Quae vero auctorem tractata ab fiducia dicuntur.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- End Icon Boxes Short Code -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bottom-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-container uk-container-center parallax modulebox">
+                    <h3 class="border-top-bottom bold space-top">REVOLUTIONARY MEDIA</h3>
+                    <p class="p center uk-width-1-2" style="margin-top:-30px;" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">Praeterea iter est quasdam res quas ex communi. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Me non paenitet nullum festiviorem excogitasse ad hoc. Tityre, tu patulae recubans sub tegmine fagi dolor.
+                        <p>
+                            <img src="images/iphone-browser.png" alt="Iphone" class="center space-bottom" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:400}">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Content-->
+
+    <div id="bottom-block">
+        <div class="uk-container uk-container-center">
+
+            <footer class="tm-footer">
+
+                <div class="uk-panel  parallax modulebox">
+                    <p style="text-align:center;">Made by love designed and developed by <a href="http://www.h2theme.pro" target="_blank">h2theme</a> Copyright &copy; 2015 .</p>
+                </div>
+            </footer>
+            <!--/ Footer CopyRight-->
+
+            <div id="offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <div class="uk-panel parallax modulebox"> <img src="images/zeyn_logo.png" width="60" alt="Zeyn" class="center">
+                        <a onclick="jQuery.UIkit.offcanvas.hide();" style="color:white !important;" class="uk-close uk-close-alt close-canvas"></a>
+                    </div>
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-parent uk-active"> <a href="index.html">Home Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="index.html">Corporate</a> </li>
+                                <li> <a href="index_classic.html">Classic</a> </li>
+                                <li> <a href="index_creative.html">Creative</a> </li>
+                                <li> <a href="index_blogger.html">Blogger</a> </li>
+                                <li> <a href="index_medical.html">Medical</a> </li>
+                                <li> <a href="index_restaurant.html">Restaurant</a> </li>
+                                <li> <a href="index_hotel_travel.html">Hotel &amp; Travel</a> </li>
+                                <li> <a href="index_hosting.html">Hosting</a> </li>
+                                <li> <a href="index_realestate.html">Real Estate</a> </li>
+                                <li> <a href="index_automotive.html">Automotive <div class="uk-badge">NEW</div></a> </li>
+                                <li> <a href="index_wedding.html">Wedding <div class="uk-badge">NEW</div></a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Landing Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="landing_event.html">Event</a> </li>
+                                <li><a href="landing_zeyn.html">Zeyn</a> </li>
+                                <li><a href="landing_launch.html">Launch</a> </li>
+                                <li><a href="landing_onepage.html">One Page</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Pages</a>
+                            <ul class="uk-nav-sub">
+                                <li class="uk-parent"> <a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="pages_blog_classic.html">Blog Classic</a> </li>
+                                        <li><a href="pages_blog_3_columns.html">Blog Grid 3 Columns</a> </li>
+                                        <li><a href="pages_blog_4_columns.html">Blog Grid 4 Columns</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Our Team</a>
+                                    <ul>
+                                        <li><a href="our_team_one.html">Our Team One</a> </li>
+                                        <li><a href="our_team_two.html">Our Team Two</a> </li>
+                                        <li><a href="our_team_three.html">Our Team Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> Contact Us</a>
+                                    <ul>
+                                        <li><a href="contact_us_one.html">Contact Us One</a> </li>
+                                        <li><a href="contact_us_two.html">Contact Us Two</a> </li>
+                                        <li><a href="contact_us_three.html">Contact Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#"> About Us</a>
+                                    <ul>
+                                        <li><a href="about_us_one.html">About Us One</a> </li>
+                                        <li><a href="about_us_two.html">About Us Two</a> </li>
+                                        <li><a href="about_us_three.html">About Us Three</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent"> <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services_page_one.html">Services Page One</a> </li>
+                                        <li><a href="services_page_two.html">Services Page Two</a> </li>
+                                        <li><a href="services_page_three.html">Services Page Three</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Widgets</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="lightbox.html"><i class="uk-icon-chain"></i>Lightbox</a> </li>
+                                <li><a href="testimonial.html"><i class="uk-icon-quote-left"></i>Testimonial</a> </li>
+                                <li><a href="show_team.html"><i class="uk-icon-suitcase"></i>Show Team</a> </li>
+                                <li><a href="food_menu.html"><i class="uk-icon-cutlery"></i>Food Menu</a> </li>
+                                <li><a href="progress_bars.html"><i class="uk-icon-bar-chart"></i>Progress Bars</a> </li>
+                                <li><a href="logo_grid.html"><i class="uk-icon-th-large"></i>Logo Grid</a> </li>
+                                <li><a href="icon_boxes.html"><i class="uk-icon-navicon"></i>Icon Boxes</a> </li>
+                                <li><a href="spotlight.html"><i class="uk-icon-search-plus"></i>Spotlight</a> </li>
+                                <li><a href="count_down.html"><i class="uk-icon-calendar"></i>Count Down</a> </li>
+                                <li><a href="pricing_table.html"><i class="uk-icon-table"></i>Pricing Table</a> </li>
+                                <li><a href="our_team.html"><i class="uk-icon-users"></i>Our Team</a> </li>
+                                <li><a href="timeline.html"><i class="uk-icon-indent"></i>Timeline</a> </li>
+                                <li><a href="number_count.html"><i class="uk-icon-pie-chart"></i>Number Count </a> </li>
+                                <li><a href="animation.html"><i class="uk-icon-exchange"></i>Animations</a> </li>
+                                <li><a href="smooth_scroll.html"><i class="uk-icon-hand-o-down"></i>Smooth Scroll</a> </li>
+                                <li><a href="scrollspy.html"><i class="uk-icon-sort-amount-asc"></i>Scrollspy</a> </li>
+                                <li><a href="badge.html"><i class="uk-icon-ticket"></i>Badge</a> </li>
+                                <li><a href="button.html"><i class="uk-icon-share-square"></i>Button</a> </li>
+                                <li><a href="datepicker.html"><i class="uk-icon-clock-o"></i>Date Picker</a> </li>
+                                <li><a href="modal.html"><i class="uk-icon-link"></i>Modal</a> </li>
+                                <li><a href="alert.html"><i class="uk-icon-info"></i>Alert</a> </li>
+                                <li><a href="slideshow.html"><i class="uk-icon-sliders"></i>Slideshow</a> </li>
+                                <li><a href="slideset.html"><i class="uk-icon-play"></i>Slideset</a> </li>
+                                <li><a href="slider.html"><i class="uk-icon-glass"></i>Slider</a> </li>
+                                <li><a href="dynamic_grid.html"><i class="uk-icon-th-list"></i>Dynamic Grid</a> </li>
+                                <li><a href="panel.html"><i class="uk-icon-plus-square-o"></i>Panel</a> </li>
+                                <li><a href="offcanvas.html"><i class="uk-icon-mobile"></i>Off Canvas</a> </li>
+                                <li><a href="accordion.html"><i class="uk-icon-minus-square-o"></i>Accordion</a> </li>
+                                <li><a href="toggle.html"><i class="uk-icon-toggle-on"></i>Toggle</a> </li>
+                                <li><a href="tab.html"><i class="uk-icon-columns"></i>Tab</a> </li>
+                                <li><a href="comment.html"><i class="uk-icon-comments"></i>Comment</a> </li>
+                                <li><a href="form.html"><i class="uk-icon-pencil"></i>Forms</a> </li>
+                                <li class="uk-active"><a href="parallax.html"><i class="uk-icon-image"></i>Parallax</a> </li>
+                                <li><a href="cover.html"><i class="uk-icon-crosshairs"></i>Cover</a> </li>
+                                <li><a href="nav.html"><i class="uk-icon-ellipsis-h"></i>Nav</a> </li>
+                                <li><a href="dropdown.html"><i class="uk-icon-angle-double-down"></i>Dropdown</a> </li>
+                                <li><a href="sticky.html"><i class="uk-icon-external-link"></i>Sticky</a> </li>
+                                <li><a href="media_player.html"><i class="uk-icon-desktop"></i>Media Player</a> </li>
+                                <li><a href="tooltip.html"><i class="uk-icon-flag"></i>Tooltip</a> </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent"><a href="#">Full Features</a>
+                            <ul class="uk-nav-sub">
+                                <li> <a href="typography.html"><i class="uk-icon-gears"></i>Typography</a> </li>
+                                <li> <a href="columns.html"><i class="uk-icon-bars"></i>Columns</a> </li>
+                                <li> <a href="dropcaps.html"><i class="uk-icon-star"></i>Dropcaps</a> </li>
+                                <li> <a href="list_styles.html"><i class="uk-icon-list-ul"></i>List Styles</a> </li>
+                                <li> <a href="font_awsome_icons.html"><i class="uk-icon-ticket"></i>Font Awsome Icons</a>
+                                </li>
+                                <li> <a href="404.html"><i class="uk-icon-exclamation-triangle"></i>Page 404</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Off Canvas Mobile Menu-->
+
+        </div>
+        <!--/ Container-->
+
+    </div>
+
+</body>
+
+</html>
