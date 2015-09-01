@@ -13775,13 +13775,16 @@ pre {
 .blackmenu .search-toggle i {
     color: white;
 }
-ul.uk-navbar-nav:nth-child(2) .uk-dropdown {
+ul.uk-navbar-nav:nth-child(2) .uk-dropdown, .content-dropDown .uk-dropdown {
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 30px !important;
     width: 1120px !important;
     left: -660px;
 }
+
+.content-dropDown-left .uk-dropdown{left: 0;}
+
 .whitemenu .uk-dropdown-width-5,
 .blackmenu .uk-dropdown-width-5 {
     left: -500px !important;
@@ -16846,12 +16849,18 @@ pre code {
 }
 
 .content-menu {
-    position: absolute;
+    position: fixed;
     z-index: 408;
-    border: 1px solid #fff;
-    top: 200px;
+    top: 50px;
     color: #fff;
+    left: 50px;
+    background-color: #333;
 }
-menu-hamburger {
- color:#fff;   
+.menu-hamburger {
+    color:#fff !important;
+}
+
+.title-contact-us{
+    color:#000 !important;
+    margin-left:0 !important;
 }
