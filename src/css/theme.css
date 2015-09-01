@@ -16844,3 +16844,14 @@ pre code {
 .dark.uk-slidenav-contrast {
     color: rgba(0, 0, 0, 1) !important;
 }
+
+.content-menu {
+    position: absolute;
+    z-index: 408;
+    border: 1px solid #fff;
+    top: 200px;
+    color: #fff;
+}
+menu-hamburger {
+ color:#fff;   
+}
