@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="joomla" unicode="&#xe800;" d="m597 251l-89-89-84-85-17-17q-36-35-85-48t-95-1q-9-39-41-65t-72-25q-47 0-80 34t-34 81q0 41 25 72t63 40q-12 48 1 97t49 84l7 7 84-85-6-6q-21-21-21-50t21-50q20-20 49-20t50 20l17 17 84 85 90 89z m-190 381l7-7-85-85-7 7q-21 21-50 21t-49-21-21-50 21-50l16-16 85-85 89-89-84-85-90 89-84 85-17 17q-38 37-50 89t2 100q-39 8-64 40t-25 72q0 47 34 81t81 34q42 0 74-28t39-68q47 11 94-2t84-49z m450-596q0-47-33-81t-81-34q-42 0-73 27t-40 66q-48-16-100-4t-90 50l-6 7 84 85 7-7q20-20 49-20t50 20 21 50-21 50l-17 16-85 85-89 89 85 85 89-89 85-85 16-17q36-35 49-84t1-95q43-6 71-39t28-75z m-1 628q0-43-28-76t-71-38q14-48 1-99t-50-88l-7-7-84 85 7 7q21 20 21 49t-21 50-50 21-49-21l-17-17-85-85-89-89-85 85 90 89 85 85 16 17q37 37 88 50t100-2q6 42 38 70t76 28q47 0 81-33t33-81z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>
