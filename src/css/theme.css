@@ -13775,13 +13775,16 @@ pre {
 .blackmenu .search-toggle i {
     color: white;
 }
-ul.uk-navbar-nav:nth-child(2) .uk-dropdown {
+ul.uk-navbar-nav:nth-child(2) .uk-dropdown, .content-dropDown .uk-dropdown {
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 30px !important;
     width: 1120px !important;
     left: -660px;
 }
+
+.content-dropDown-left .uk-dropdown{left: 0;}
+
 .whitemenu .uk-dropdown-width-5,
 .blackmenu .uk-dropdown-width-5 {
     left: -500px !important;
@@ -16845,13 +16848,149 @@ pre code {
     color: rgba(0, 0, 0, 1) !important;
 }
 
-.content-menu {
-    position: absolute;
-    z-index: 408;
-    border: 1px solid #fff;
-    top: 200px;
-    color: #fff;
+.btn-menu:hover {
+    cursor: pointer;
 }
-menu-hamburger {
- color:#fff;   
+
+.content-menu {
+    position: fixed;
+    z-index: 408;
+    top: 50px;
+    color: #fff;
+    left: 50px;
+    background-color: #333;
+}
+.menu-hamburger {
+    color:#fff !important;
+}
+
+.title-contact-us{
+    color:#000 !important;
+    margin-left:0 !important;
+}
+
+@font-face {
+      font-family: 'fontello';
+      src: url('../fonts/fontello_1.eot?47049284');
+      src: url('../fonts/fontello_1.eot?47049284#iefix') format('embedded-opentype'),
+           url('../fonts/fontello_1.woff?47049284') format('woff'),
+           url('../fonts/fontello_1.ttf?47049284') format('truetype'),
+           url('../fonts/fontello_1.svg?47049284#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?64803712');
+  src: url('../font/fontello.eot?64803712#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?64803712') format('woff'),
+       url('../font/fontello.ttf?64803712') format('truetype'),
+       url('../font/fontello.svg?64803712#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?64803712#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-joomla:before { content: '\e800'; } /* '' */
+
+.width_33 {
+    width: 33%;
+}
+
+.iconboxes-circle {
+    border: 1px solid #676767;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.size-icon {
+    font-size: 95px;
+    position: absolute;
+    top: 24px;
 }
