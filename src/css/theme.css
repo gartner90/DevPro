@@ -9992,7 +9992,6 @@ html {
 }
 #header-block {
     display: block;
-    z-index: 9999999;
     padding-top: 15px;
 }
 a.tm-logo {
@@ -16993,4 +16992,16 @@ pre code {
     font-size: 95px;
     position: absolute;
     top: 24px;
+}
+
+.logo-services {
+    margin-top: 50px;
+    width: 250px;
+}
+
+.outsourcing-logo {
+    width: 100px;
+    float: right;
+    margin-right: 300px;
+    margin-top: 40px;
 }
