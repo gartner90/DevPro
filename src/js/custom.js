@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
         var phone   =  jQuery("#subject").val();
         var message =  jQuery("#message").val();
         
-		$.ajax({
+		jQuery.ajax({
 			url:'./src/Php/send.php',
 data:'name='+name+'&email='+email+'&phone='+phone+'&message='+message+'&idFormulario='+idFormulario,
 			type:'POST',
@@ -61,15 +61,3 @@ data:'name='+name+'&email='+email+'&phone='+phone+'&message='+message+'&idFormul
 			},
 		});
 	});
-
-function obtainGeolocation(){
- //obtener la posición actual y llamar a la función  "localitation" cuando tiene éxito
- window.navigator.geolocation.getCurrentPosition(localitation);
- }
- function localitation(geo){
- 
-// En consola nos devuelve el Geoposition object con los datos nuestros
- console.log(geo);
- }
- //llamando la funcion inicial para ver trabajar la API
- obtainGeolocation();
