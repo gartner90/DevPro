@@ -34,5 +34,42 @@ jQuery(document).ready(function(){
                 }, 1000);
             },500);     
 
-        });      
+        });    
     });
+
+//Validar
+	jQuery('.form-services').on('submit',function() {	
+        var idFormulario = jQuery(this).attr('id').replace('-',' ');
+        console.log(idFormulario);
+		var name    =  jQuery("#name").val();
+		var email   =  jQuery("#email").val();
+        var phone   =  jQuery("#subject").val();
+        var message =  jQuery("#message").val();
+        
+		$.ajax({
+			url:'./src/Php/send.php',
+data:'name='+name+'&email='+email+'&phone='+phone+'&message='+message+'&idFormulario='+idFormulario,
+			type:'POST',
+			dataType:'HTML',
+
+			success : function(res) {
+				UIkit.modal.alert("gracias por contactarnos, tu mensaje ha sido enviado, apreciamos tu  interés en este sitio.");
+                jQuery('input').attr('value',' ');
+			},
+			error : function(jqXHR, status, error) {
+				alert('Disculpe, existio un problema');
+			},
+		});
+	});
+
+function obtainGeolocation(){
+ //obtener la posición actual y llamar a la función  "localitation" cuando tiene éxito
+ window.navigator.geolocation.getCurrentPosition(localitation);
+ }
+ function localitation(geo){
+ 
+// En consola nos devuelve el Geoposition object con los datos nuestros
+ console.log(geo);
+ }
+ //llamando la funcion inicial para ver trabajar la API
+ obtainGeolocation();
